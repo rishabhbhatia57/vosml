@@ -516,3 +516,251 @@ cwd: None
 2022-10-18 18:29:19,879 DEBUG TBB already found in load path 
 2022-10-18 18:29:19,898 ERROR Error while prediction: Dataframe has no rows. 
 2022-10-18 18:29:19,904 INFO model_utilization task_creation ended 
+2022-10-20 12:15:22,645 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:15:23,585 INFO ------------Prediction Started------------ 
+2022-10-20 12:15:23,649 INFO model_utilization task_creation started 
+2022-10-20 12:15:23,844 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:15:24,003 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:15:24,044 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:15:24,228 DEBUG TBB already found in load path 
+2022-10-20 12:15:24,245 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:15:24,252 INFO model_utilization task_creation ended 
+2022-10-20 12:16:30,843 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:16:31,648 INFO ------------Prediction Started------------ 
+2022-10-20 12:16:31,696 INFO model_utilization task_creation started 
+2022-10-20 12:16:31,774 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:16:31,927 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:16:31,954 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:16:32,176 DEBUG TBB already found in load path 
+2022-10-20 12:16:32,207 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:16:32,214 INFO model_utilization task_creation ended 
+2022-10-20 12:17:58,694 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:17:59,490 INFO ------------Prediction Started------------ 
+2022-10-20 12:17:59,540 INFO model_utilization task_creation started 
+2022-10-20 12:17:59,613 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:17:59,774 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:17:59,804 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:17:59,986 DEBUG TBB already found in load path 
+2022-10-20 12:18:00,004 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:18:00,010 INFO model_utilization task_creation ended 
+2022-10-20 12:20:44,103 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:20:44,903 INFO ------------Prediction Started------------ 
+2022-10-20 12:20:44,949 INFO model_utilization task_creation started 
+2022-10-20 12:20:45,032 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:20:45,197 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:20:45,225 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:20:45,413 DEBUG TBB already found in load path 
+2022-10-20 12:20:45,435 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:20:45,441 INFO model_utilization task_creation ended 
+2022-10-20 12:24:02,868 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:24:03,672 INFO ------------Prediction Started------------ 
+2022-10-20 12:24:03,722 INFO model_utilization task_creation started 
+2022-10-20 12:24:03,803 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:24:03,956 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:24:03,984 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:24:04,168 DEBUG TBB already found in load path 
+2022-10-20 12:24:04,187 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:24:04,194 INFO model_utilization task_creation ended 
+2022-10-20 12:24:38,380 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:24:39,177 INFO ------------Prediction Started------------ 
+2022-10-20 12:24:39,229 INFO model_utilization task_creation started 
+2022-10-20 12:24:39,309 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:24:39,461 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:24:39,492 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:24:39,683 DEBUG TBB already found in load path 
+2022-10-20 12:24:39,709 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:24:39,716 INFO model_utilization task_creation ended 
+2022-10-20 12:28:20,877 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:28:21,675 INFO ------------Prediction Started------------ 
+2022-10-20 12:28:21,720 INFO model_utilization task_creation started 
+2022-10-20 12:28:21,802 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:28:21,959 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:28:22,014 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:28:22,221 DEBUG TBB already found in load path 
+2022-10-20 12:28:22,246 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:28:22,252 INFO model_utilization task_creation ended 
+2022-10-20 12:29:02,850 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:29:03,633 INFO ------------Prediction Started------------ 
+2022-10-20 12:29:03,684 INFO model_utilization task_creation started 
+2022-10-20 12:29:03,765 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:29:03,919 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:29:03,946 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:29:04,126 DEBUG TBB already found in load path 
+2022-10-20 12:29:04,148 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:29:04,156 INFO model_utilization task_creation ended 
+2022-10-20 12:29:34,597 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:29:35,416 INFO ------------Prediction Started------------ 
+2022-10-20 12:29:35,472 INFO model_utilization task_creation started 
+2022-10-20 12:29:35,555 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:29:35,709 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:29:35,743 ERROR Error while task_creation: local variable 'l' referenced before assignment 
+2022-10-20 12:29:35,743 INFO model_utilization task_creation ended 
+2022-10-20 12:29:59,641 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:30:00,426 INFO ------------Prediction Started------------ 
+2022-10-20 12:30:00,475 INFO model_utilization task_creation started 
+2022-10-20 12:30:00,561 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:30:00,716 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:30:00,750 ERROR Error while task_creation: local variable 'l' referenced before assignment 
+2022-10-20 12:30:00,751 INFO model_utilization task_creation ended 
+2022-10-20 12:33:50,915 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:33:51,731 INFO ------------Prediction Started------------ 
+2022-10-20 12:33:51,791 INFO model_utilization task_creation started 
+2022-10-20 12:33:51,874 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:33:52,030 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:33:52,064 ERROR Error while task_creation: local variable 'l' referenced before assignment 
+2022-10-20 12:33:52,065 INFO model_utilization task_creation ended 
+2022-10-20 12:34:13,882 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:34:14,702 INFO ------------Prediction Started------------ 
+2022-10-20 12:34:14,756 INFO model_utilization task_creation started 
+2022-10-20 12:34:14,837 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:34:15,006 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:34:15,044 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:34:15,233 DEBUG TBB already found in load path 
+2022-10-20 12:34:15,253 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:34:15,259 INFO model_utilization task_creation ended 
+2022-10-20 12:35:19,407 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:35:20,220 INFO ------------Prediction Started------------ 
+2022-10-20 12:35:20,269 INFO model_utilization task_creation started 
+2022-10-20 12:35:20,351 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:35:20,531 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:35:20,603 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:35:20,791 DEBUG TBB already found in load path 
+2022-10-20 12:35:20,819 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:35:20,826 INFO model_utilization task_creation ended 
+2022-10-20 12:36:06,282 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:36:07,105 INFO ------------Prediction Started------------ 
+2022-10-20 12:36:07,152 INFO model_utilization task_creation started 
+2022-10-20 12:36:07,242 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:36:07,396 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:36:07,462 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:36:07,651 DEBUG TBB already found in load path 
+2022-10-20 12:36:07,671 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:36:07,677 INFO model_utilization task_creation ended 
+2022-10-20 12:36:31,544 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:36:32,363 INFO ------------Prediction Started------------ 
+2022-10-20 12:36:32,413 INFO model_utilization task_creation started 
+2022-10-20 12:36:32,498 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:36:32,653 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:36:32,709 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:36:32,991 DEBUG TBB already found in load path 
+2022-10-20 12:36:33,048 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:36:33,073 INFO model_utilization task_creation ended 
+2022-10-20 12:37:31,542 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:37:32,361 INFO ------------Prediction Started------------ 
+2022-10-20 12:37:32,417 INFO model_utilization task_creation started 
+2022-10-20 12:37:32,505 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:37:32,692 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:37:32,797 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:37:33,012 DEBUG TBB already found in load path 
+2022-10-20 12:37:33,043 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:37:33,049 INFO model_utilization task_creation ended 
+2022-10-20 12:37:46,979 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:37:48,470 INFO ------------Prediction Started------------ 
+2022-10-20 12:37:48,528 INFO model_utilization task_creation started 
+2022-10-20 12:37:48,626 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:37:48,816 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:37:48,908 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:37:49,152 DEBUG TBB already found in load path 
+2022-10-20 12:37:49,177 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-20 12:37:49,185 INFO model_utilization task_creation ended 
+2022-10-20 12:40:55,301 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:40:56,075 INFO ------------Prediction Started------------ 
+2022-10-20 12:40:56,119 INFO model_utilization task_creation started 
+2022-10-20 12:40:56,197 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:40:56,348 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:40:56,376 ERROR Error while task_creation: [Errno 13] Permission denied: 'future_dates.xlsx' 
+2022-10-20 12:40:56,376 INFO model_utilization task_creation ended 
+2022-10-20 12:41:45,665 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:41:46,624 INFO ------------Prediction Started------------ 
+2022-10-20 12:41:46,675 INFO model_utilization task_creation started 
+2022-10-20 12:41:46,757 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:41:46,911 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:41:46,940 ERROR Error while task_creation: [Errno 13] Permission denied: 'future_dates.xlsx' 
+2022-10-20 12:41:46,941 INFO model_utilization task_creation ended 
+2022-10-20 12:42:00,074 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:42:00,975 INFO ------------Prediction Started------------ 
+2022-10-20 12:42:01,045 INFO model_utilization task_creation started 
+2022-10-20 12:42:01,141 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:42:01,323 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:42:01,401 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:42:01,563 DEBUG TBB already found in load path 
+2022-10-20 12:42:04,258 ERROR Error while prediction: (mysql.connector.errors.DatabaseError) 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3306' (10061)
+(Background on this error at: https://sqlalche.me/e/14/4xp6) 
+2022-10-20 12:42:04,266 INFO model_utilization task_creation ended 
+2022-10-20 12:44:03,333 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:44:04,127 INFO ------------Prediction Started------------ 
+2022-10-20 12:44:04,172 INFO model_utilization task_creation started 
+2022-10-20 12:44:04,255 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:44:04,415 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:44:04,486 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:44:04,671 DEBUG TBB already found in load path 
+2022-10-20 12:44:07,584 ERROR Error while prediction: (mysql.connector.errors.DatabaseError) 2003 (HY000): Can't connect to MySQL server on '127.0.0.1:3306' (10061)
+(Background on this error at: https://sqlalche.me/e/14/4xp6) 
+2022-10-20 12:44:07,592 INFO model_utilization task_creation ended 
+2022-10-20 12:45:02,231 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:45:03,123 INFO ------------Prediction Started------------ 
+2022-10-20 12:45:03,176 INFO model_utilization task_creation started 
+2022-10-20 12:45:03,276 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:45:03,462 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:45:03,553 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:45:03,883 DEBUG TBB already found in load path 
+2022-10-20 12:45:04,929 INFO model_utilization task_creation ended 
+2022-10-20 12:46:17,361 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:46:18,162 INFO ------------Prediction Started------------ 
+2022-10-20 12:46:18,214 INFO model_utilization task_creation started 
+2022-10-20 12:46:18,296 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:46:18,458 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:46:18,534 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:46:18,714 DEBUG TBB already found in load path 
+2022-10-20 12:46:19,368 INFO model_utilization task_creation ended 
+2022-10-20 12:48:34,871 INFO ------------Initializing Prediction queries------------ 
+2022-10-20 12:48:35,673 INFO ------------Prediction Started------------ 
+2022-10-20 12:48:35,723 INFO model_utilization task_creation started 
+2022-10-20 12:48:35,895 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:48:36,062 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-20 12:48:36,131 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-20 12:48:36,309 DEBUG TBB already found in load path 
+2022-10-20 12:48:36,943 INFO model_utilization task_creation ended 

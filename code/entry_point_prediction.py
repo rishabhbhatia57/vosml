@@ -59,7 +59,7 @@ output_table_name = 'R_OutputTable'
 frequency      = 'm'
 
 parallel_processes = 1
-debug_mode = 'ON'
+debug_mode = 'OFF'
 
 
 

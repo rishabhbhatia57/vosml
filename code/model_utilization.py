@@ -38,16 +38,18 @@ def prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Outpu
         
         my_file = Path(Model_path + model_prefix + Store_Code_Val + '.json')
         if my_file.is_file():
-            #print("exist")
+            # print("exist")
             
             with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
                 model = model_from_json(json.load(fin))
             model_last_date_dataframe = model.history_dates.tail(1)
-            
+            print("exist1")
             
             #print(last_date)
+            print(future_dates)
             prediction=model.predict(future_dates)
             #model.plot(prediction)
+            print("exist2")
                 
             df_final = future_dates.merge(prediction, how="outer")
             
@@ -71,8 +73,8 @@ def prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Outpu
             i = i+1
             #df_final["batch_no"] = batch_no
             df_final.reset_index(drop=True, inplace=True)
-            
-            df_final.to_sql(con=database_connection, name= output_table_name, if_exists='append', index= False)
+            df_final.to_excel('df_final.xlsx')
+            # df_final.to_sql(con=database_connection, name= output_table_name, if_exists='append', index= False)
             global final_dataframe
             final_dataframe = final_dataframe.append(df_final, ignore_index=True)
             
@@ -83,7 +85,10 @@ def prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Outpu
         #print(x)
         #final_dataframe.head(32)
     except Exception as e:
-        print(e)
+        print("Error while prediction: "+str(e))
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
         logger.error("Error while prediction: "+str(e))
 
 
@@ -163,8 +168,7 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
                 #print(model_last_date_dataframe)
                 nw = ((to_date-last_date)/30).dt.days.astype('int')
                 n = nw.iloc[0]
-                
-                future_dates=model.make_future_dataframe(periods=n, freq = frequency)
+                future_dates=model.make_future_dataframe(periods=n, freq = 'w') # freq = m change weekly beacuse df was empty
                 # print(future_dates.iloc[-n:])
                 # print(future_dates)
                 #dates = (future_dates.iloc[-n:]) + pd.to_timedelta(1, unit = 'm')
@@ -172,8 +176,10 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
                 future_dates.drop(future_dates.tail(n).index,inplace=True)
                 future_dates = pd.concat([future_dates, dates])
                 future_dates['ds']=pd.to_datetime(future_dates['ds'])
-                
+                future_dates.to_excel('future_dates.xlsx')
+                print(from_date,to_date)
                 future_dates = future_dates[(future_dates['ds'] >= from_date) & (future_dates['ds'] <= to_date )]
+                # print(future_dates)
                 break
             else:
                 i = i+1
@@ -194,13 +200,15 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
         processes = []
         a = int(len(uniqueValues)/parallel_processes)
         #print(len(uniqueValues))
-        
+        print(uniqueValues)
 
         for i in range(0,parallel_processes-1):
             print(str((i*a)) + ' , ' + str((i+1)*a))
             l = uniqueValues[(i*a) : (i+1)*a]
-
-            prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, Model_Type, database_connection, output_table_name, i)
+            print(l)
+        print(future_dates)
+        l = 'VETINA-Antibiotics -Cat_3' 
+        prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, Model_Type, database_connection, output_table_name, i)
 
             # p = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 
             #                                                         Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, 

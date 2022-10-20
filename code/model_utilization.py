@@ -9,15 +9,19 @@ Original file is located at
 
 # Commented out IPython magic to ensure Python compatibility.
 import pandas as pd
+import time
+import sys, os
 import json
 from prophet.serialize import model_from_json
 import warnings
 from pathlib import Path
 import multiprocessing
 import numpy as np
+from logs import setup_custom_logger
 
 final_dataframe = pd.DataFrame()
 result_not_created = []
+logger = setup_custom_logger('root')
 
 #Model_path, l, model_prefix, to_dat, from_date, Output_Date_Col, Output_Partition_Col, 
 #               Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, Model_Type_col_name, 
@@ -26,195 +30,218 @@ result_not_created = []
 def prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, 
                partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, 
                Model_Type, database_connection, output_table_name, i):
-    for x in l:
-      warnings.filterwarnings("ignore")
-      Store_Code_Val = x
-      
-      
-      my_file = Path(Model_path + model_prefix + Store_Code_Val + '.json')
-      if my_file.is_file():
-          #print("exist")
-          
-          with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
-              model = model_from_json(json.load(fin))
-          model_last_date_dataframe = model.history_dates.tail(1)
-          
-         
-          #print(last_date)
-          prediction=model.predict(future_dates)
-          #model.plot(prediction)
+    try:
+        for x in l:
+            warnings.filterwarnings("ignore")
+            Store_Code_Val = x
             
-          df_final = future_dates.merge(prediction, how="outer")
-          
-          prediction['partition_col'] = Store_Code_Val
-          #df_statistical_summary = df_statistical_summary.append(prediction, ignore_index=True)
-          
-          df_final = df_final.drop(['trend', 'yhat_lower', 'yhat_upper', 'trend_lower', 'trend_upper', 'additive_terms', 'additive_terms_lower'], axis =1)
-          df_final = df_final.drop(['additive_terms_upper', 'yearly', 'yearly_lower', 'yearly_upper', 'multiplicative_terms', 'multiplicative_terms_lower', 'multiplicative_terms_upper'], axis =1)
-          df_final = df_final.rename(columns = {'ds' : Output_Date_Col}, inplace = False)
-          df_final = df_final.rename(columns = {'yhat' : Output_Prediction_col}, inplace = False)
-          df_final[partition_col] = Store_Code_Val 
-          df_final = df_final.rename(columns = {'UniqueKey' : Output_Partition_Col}, inplace = False)
-          df_final[Model_Last_Date_Col] = str(model_last_date_dataframe.iloc[0])
-          #changes here
-          #df_final["Last Date of Data"].iloc[0] = str(model_last_date_dataframe.iloc[0])
-          df_final[From_Date_Col] = from_date
-          df_final[To_Date_Col] = to_date
-          #print((Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == Store_Code_Val]))
-          
-          df_final[Model_Type_col_name] = (Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == Store_Code_Val])#.item()
-          i = i+1
-          #df_final["batch_no"] = batch_no
-          df_final.reset_index(drop=True, inplace=True)
-          
-          df_final.to_sql(con=database_connection, name= output_table_name, if_exists='append', index= False)
-          global final_dataframe
-          final_dataframe = final_dataframe.append(df_final, ignore_index=True)
-           
-      else:
-          #print(Store_Code_Val + ' Does not exist')
-          result_not_created.append(Store_Code_Val)
+        
+        my_file = Path(Model_path + model_prefix + Store_Code_Val + '.json')
+        if my_file.is_file():
+            #print("exist")
+            
+            with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
+                model = model_from_json(json.load(fin))
+            model_last_date_dataframe = model.history_dates.tail(1)
+            
+            
+            #print(last_date)
+            prediction=model.predict(future_dates)
+            #model.plot(prediction)
+                
+            df_final = future_dates.merge(prediction, how="outer")
+            
+            prediction['partition_col'] = Store_Code_Val
+            #df_statistical_summary = df_statistical_summary.append(prediction, ignore_index=True)
+            
+            df_final = df_final.drop(['trend', 'yhat_lower', 'yhat_upper', 'trend_lower', 'trend_upper', 'additive_terms', 'additive_terms_lower'], axis =1)
+            df_final = df_final.drop(['additive_terms_upper', 'yearly', 'yearly_lower', 'yearly_upper', 'multiplicative_terms', 'multiplicative_terms_lower', 'multiplicative_terms_upper'], axis =1)
+            df_final = df_final.rename(columns = {'ds' : Output_Date_Col}, inplace = False)
+            df_final = df_final.rename(columns = {'yhat' : Output_Prediction_col}, inplace = False)
+            df_final[partition_col] = Store_Code_Val 
+            df_final = df_final.rename(columns = {'UniqueKey' : Output_Partition_Col}, inplace = False)
+            df_final[Model_Last_Date_Col] = str(model_last_date_dataframe.iloc[0])
+            #changes here
+            #df_final["Last Date of Data"].iloc[0] = str(model_last_date_dataframe.iloc[0])
+            df_final[From_Date_Col] = from_date
+            df_final[To_Date_Col] = to_date
+            #print((Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == Store_Code_Val]))
+            
+            df_final[Model_Type_col_name] = (Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == Store_Code_Val])#.item()
+            i = i+1
+            #df_final["batch_no"] = batch_no
+            df_final.reset_index(drop=True, inplace=True)
+            
+            df_final.to_sql(con=database_connection, name= output_table_name, if_exists='append', index= False)
+            global final_dataframe
+            final_dataframe = final_dataframe.append(df_final, ignore_index=True)
+            
+        else:
+            #print(Store_Code_Val + ' Does not exist')
+            result_not_created.append(Store_Code_Val)
 
-      #print(x)
-    #final_dataframe.head(32)
+        #print(x)
+        #final_dataframe.head(32)
+    except Exception as e:
+        print(e)
+        logger.error("Error while prediction: "+str(e))
 
 
 def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, partition_col, 
                   database_connection, Model_path, model_prefix, frequency, Output_Date_Col,
                   Output_Prediction_col, Output_Partition_Col, Model_Last_Date_Col, 
                   output_table_name, parallel_processes, debug_mode):
-    print("Task initialize")    
-    df_Source = df_sql_data
-    
-    #Changes here
-    from_date = pd.to_datetime(df_Source[From_Date_Col].iloc[0])
-    to_date = pd.to_datetime(df_Source[To_Date_Col].iloc[0])
-    
-    #from_date = pd.to_datetime('2021-06-19')
-    #to_date = pd.to_datetime('2021-07-17')
-    
-    
-    Model_Type  = df_Source[[Model_Type_col_name, partition_col]]
-    
-    uniqueValues = (df_Source[partition_col].unique())
-    #print(uniqueValues)
-    final_dataframe = pd.DataFrame()
-    i=1
-    a=0
-    print(uniqueValues[1])
-    '''while(True):
-	
-        Store_Code_Val = str(uniqueValues[i])
-        print(Store_Code_Val)
-        print(Model_path + model_prefix + Store_Code_Val + '.json')
-        my_file = Path(Model_path + model_prefix + Store_Code_Val + '.json')
-        if my_file.is_file():
-            #print("exist")
-            with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
-                model = model_from_json(json.load(fin))
-            model_last_date_dataframe = model.history_dates.tail(1)
-            #print(model.history_dates.tail(10))
-            last_date = pd.to_datetime(model_last_date_dataframe)
-            #print(model_last_date_dataframe)
-            nw = ((to_date-last_date)/7).dt.days.astype('int')
-            n = nw.iloc[0]
-            
-            future_dates=model.make_future_dataframe(periods=n, freq = frequency)
-            print(future_dates.iloc[-n:])
-            #dates = (future_dates.iloc[-n:]) + pd.to_timedelta(1, unit = 'm')
-            dates = (future_dates.iloc[-n:])
-            future_dates.drop(future_dates.tail(n).index,inplace=True)
-            future_dates = pd.concat([future_dates, dates])
-            future_dates['ds']=pd.to_datetime(future_dates['ds'])
-            
-            future_dates = future_dates[(future_dates['ds'] >= from_date) & (future_dates['ds'] <= to_date )]
-            break
-        else:
-            i = i+1
-    '''
-            
-    
-    while(True):
-	
-        Store_Code_Val = str(uniqueValues[i])
-        print(Store_Code_Val)
-        print(Model_path + model_prefix + Store_Code_Val + '.json')
-        my_file = Path(Model_path + model_prefix + Store_Code_Val + '.json')
+    try:
+        print("Task initialize")    
+        df_Source = df_sql_data
+        
+        #Changes here
+        from_date = pd.to_datetime(df_Source[From_Date_Col].iloc[0])
+        to_date = pd.to_datetime(df_Source[To_Date_Col].iloc[0])
+        
+        #from_date = pd.to_datetime('2021-06-19')
+        #to_date = pd.to_datetime('2021-07-17')
         
         
-        if my_file.is_file():
-            #print("exist")
-            with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
-                model = model_from_json(json.load(fin))
-            model_last_date_dataframe = model.history_dates.tail(1)
-            #print(model.history_dates.tail(10))
-            last_date = pd.to_datetime(model_last_date_dataframe)
-            #print(model_last_date_dataframe)
-            nw = ((to_date-last_date)/30).dt.days.astype('int')
-            n = nw.iloc[0]
-            
-            future_dates=model.make_future_dataframe(periods=n, freq = frequency)
-            print(future_dates.iloc[-n:])
-            #dates = (future_dates.iloc[-n:]) + pd.to_timedelta(1, unit = 'm')
-            dates = (future_dates.iloc[-n:])
-            future_dates.drop(future_dates.tail(n).index,inplace=True)
-            future_dates = pd.concat([future_dates, dates])
-            future_dates['ds']=pd.to_datetime(future_dates['ds'])
-            
-            future_dates = future_dates[(future_dates['ds'] >= from_date) & (future_dates['ds'] <= to_date )]
-            break
-        else:
-            i = i+1
-    #print(df_Source)
-    #print(Model_Type)
-    
-    #print(str(Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == 'FOSSIL-NA-CN0081-ME3161']))
-    #temp = (Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == 'FOSSIL-NA-CN0081-ME3161'])
-    #print(temp.item())
-    #t = temp["DM5"].tolist()
-    #print(t[0])
-    #print(Model_Type[Model_Type_col_name, (Model_Type[partition_col == 'ARMANI-NA-CN0003-AR11011'])])
-    #print(future_dates)
-    
-    
-    #-------------------------
-    processes = []
-    a = int(len(uniqueValues)/parallel_processes)
-    #print(len(uniqueValues))
-    
+        Model_Type  = df_Source[[Model_Type_col_name, partition_col]]
+        
+        uniqueValues = (df_Source[partition_col].unique())
+        #print(uniqueValues)
+        final_dataframe = pd.DataFrame()
+        i=0
+        a=0
+        # print(uniqueValues[1])
+        '''while(True):
+        
+            Store_Code_Val = str(uniqueValues[i])
+            print(Store_Code_Val)
+            print(Model_path + model_prefix + Store_Code_Val + '.json')
+            my_file = Path(Model_path + model_prefix + Store_Code_Val + '.json')
+            if my_file.is_file():
+                #print("exist")
+                with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
+                    model = model_from_json(json.load(fin))
+                model_last_date_dataframe = model.history_dates.tail(1)
+                #print(model.history_dates.tail(10))
+                last_date = pd.to_datetime(model_last_date_dataframe)
+                #print(model_last_date_dataframe)
+                nw = ((to_date-last_date)/7).dt.days.astype('int')
+                n = nw.iloc[0]
+                
+                future_dates=model.make_future_dataframe(periods=n, freq = frequency)
+                print(future_dates.iloc[-n:])
+                #dates = (future_dates.iloc[-n:]) + pd.to_timedelta(1, unit = 'm')
+                dates = (future_dates.iloc[-n:])
+                future_dates.drop(future_dates.tail(n).index,inplace=True)
+                future_dates = pd.concat([future_dates, dates])
+                future_dates['ds']=pd.to_datetime(future_dates['ds'])
+                
+                future_dates = future_dates[(future_dates['ds'] >= from_date) & (future_dates['ds'] <= to_date )]
+                break
+            else:
+                i = i+1
+        '''
+                
+        
+        while(True):
+            # print('uniqueValues: '+str(uniqueValues))
+            Store_Code_Val = str(uniqueValues[i])
+            # print(Store_Code_Val)
+            # print(Model_path + model_prefix + Store_Code_Val + '.json')
 
-    for i in range(0,parallel_processes-1):
-        print(str((i*a)) + ' , ' + str((i+1)*a))
-        l = uniqueValues[(i*a) : (i+1)*a]
-        p = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 
-                                                                 Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, 
-                                                                 from_date, to_date, Model_Type_col_name, Model_Type, database_connection, 
-                                                                 output_table_name, i, ))
-        p.start()
-        processes.append(p)
-    dif = (len(uniqueValues) - (parallel_processes * a))
-    l = uniqueValues[((i)*a) : (parallel_processes*a)+dif]
-    print(str(((i+1)*a)) + ' , ' +  str((parallel_processes*a)+dif))
-    p2 = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 
-                                                             Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col,
-                                                             from_date, to_date, Model_Type_col_name, Model_Type, database_connection, 
-                                                             output_table_name, i, ))
-    
-    p2.start()
-    processes.append(p2)
-    for process in processes:
-        process.join()
-    
-    #-------------------------------------
-    
-    
-    if debug_mode == "ON" :
-        with open(Model_path + 'result not created.csv', 'w') as f:
-            print(result_not_created)
-            result_nc_df = pd.DataFrame(result_not_created)
-            result_nc_df.to_csv(f)
+            # print("C:/Users/HP/Desktop/CBIA Projects/Vosml/model/Vetina/VETINA-Antibiotics -Cat_1.json")
+            my_file = Model_path + model_prefix + Store_Code_Val + '.json'
+            # print(os.path.isfile('C:/Users/HP/Desktop/CBIA Projects/Vosml/model/Vetina/VETINA-Antibiotics -Cat_1.json'))
+            # print(my_file, os.path.isfile(my_file))
+            if os.path.isfile(my_file):
+                #print("exist")
+                with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
+                    model = model_from_json(json.load(fin))
+                model_last_date_dataframe = model.history_dates.tail(1)
+                #print(model.history_dates.tail(10))
+                last_date = pd.to_datetime(model_last_date_dataframe)
+                #print(model_last_date_dataframe)
+                nw = ((to_date-last_date)/30).dt.days.astype('int')
+                n = nw.iloc[0]
+                
+                future_dates=model.make_future_dataframe(periods=n, freq = frequency)
+                # print(future_dates.iloc[-n:])
+                # print(future_dates)
+                #dates = (future_dates.iloc[-n:]) + pd.to_timedelta(1, unit = 'm')
+                dates = (future_dates.iloc[-n:])
+                future_dates.drop(future_dates.tail(n).index,inplace=True)
+                future_dates = pd.concat([future_dates, dates])
+                future_dates['ds']=pd.to_datetime(future_dates['ds'])
+                
+                future_dates = future_dates[(future_dates['ds'] >= from_date) & (future_dates['ds'] <= to_date )]
+                break
+            else:
+                i = i+1
+                # print('Increment i')
+        #print(df_Source)
+        #print(Model_Type)
+        
+        #print(str(Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == 'FOSSIL-NA-CN0081-ME3161']))
+        #temp = (Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == 'FOSSIL-NA-CN0081-ME3161'])
+        #print(temp.item())
+        #t = temp["DM5"].tolist()
+        #print(t[0])
+        #print(Model_Type[Model_Type_col_name, (Model_Type[partition_col == 'ARMANI-NA-CN0003-AR11011'])])
+        #print(future_dates)
+        
+        
+        #-------------------------
+        processes = []
+        a = int(len(uniqueValues)/parallel_processes)
+        #print(len(uniqueValues))
+        
 
-    with open(Model_path + 'Fossil - Final Result.csv', 'w') as f:
-        final_dataframe.to_csv(f)
+        for i in range(0,parallel_processes-1):
+            print(str((i*a)) + ' , ' + str((i+1)*a))
+            l = uniqueValues[(i*a) : (i+1)*a]
 
+            prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, Model_Type, database_connection, output_table_name, i)
+
+            # p = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 
+            #                                                         Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, 
+            #                                                         from_date, to_date, Model_Type_col_name, Model_Type, database_connection, 
+            #                                                         output_table_name, i, ))
+            # p.start()
+            # time.sleep(3)
+            # processes.append(p)
+        dif = (len(uniqueValues) - (parallel_processes * a))
+        l = uniqueValues[((i)*a) : (parallel_processes*a)+dif]
+        print(str(((i+1)*a)) + ' , ' +  str((parallel_processes*a)+dif))
+
+        prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, Model_Type, database_connection, output_table_name, i)
+
+        # p2 = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 
+        #                                                         Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col,
+        #                                                         from_date, to_date, Model_Type_col_name, Model_Type, database_connection, 
+        #                                                         output_table_name, i, ))
+        
+        # p2.start()
+        
+        # processes.append(p2)
+        # for process in processes:
+        #     process.join()
+        
+        #-------------------------------------
+        
+        
+        if debug_mode == "ON" :
+            with open(Model_path + 'result not created.csv', 'w') as f:
+                print('result_not_created')
+                result_nc_df = pd.DataFrame(result_not_created)
+                result_nc_df.to_csv(f)
+
+        with open(Model_path + 'Fossil - Final Result.csv', 'w') as f:
+            final_dataframe.to_csv(f)
+
+    except Exception as e:
+        print("Error while task_creation: "+str(e))
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
+        logger.error("Error while task_creation: " +str(e))
 

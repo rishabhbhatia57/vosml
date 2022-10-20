@@ -1,0 +1,518 @@
+2022-10-18 14:38:19,440 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 14:38:19,441 INFO ------------Prediction Started------------ 
+2022-10-18 15:25:03,184 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:26:42,987 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:28:24,519 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:28:25,199 INFO ------------Prediction Started------------ 
+2022-10-18 15:28:59,124 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:28:59,791 INFO ------------Prediction Started------------ 
+2022-10-18 15:29:23,630 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:29:24,353 INFO ------------Prediction Started------------ 
+2022-10-18 15:29:33,384 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:29:34,066 INFO ------------Prediction Started------------ 
+2022-10-18 15:29:34,121 ERROR Error while task_creationindex 3 is out of bounds for axis 0 with size 3 
+2022-10-18 15:30:43,742 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:30:44,404 INFO ------------Prediction Started------------ 
+2022-10-18 15:30:44,444 INFO model_utilization started 
+2022-10-18 15:30:44,453 ERROR Error while task_creationindex 3 is out of bounds for axis 0 with size 3 
+2022-10-18 15:30:44,453 INFO model_utilization ended 
+2022-10-18 15:31:52,191 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:31:52,893 INFO ------------Prediction Started------------ 
+2022-10-18 15:31:52,934 INFO model_utilization task_creation started 
+2022-10-18 15:31:52,940 ERROR Error while task_creationindex 3 is out of bounds for axis 0 with size 3 
+2022-10-18 15:31:52,941 INFO model_utilization task_creation ended 
+2022-10-18 15:34:38,842 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:34:39,508 INFO ------------Prediction Started------------ 
+2022-10-18 15:34:39,547 INFO model_utilization task_creation started 
+2022-10-18 15:34:39,556 ERROR Error while task_creationindex 3 is out of bounds for axis 0 with size 3 
+2022-10-18 15:34:39,556 INFO model_utilization task_creation ended 
+2022-10-18 15:35:24,387 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:35:25,100 INFO ------------Prediction Started------------ 
+2022-10-18 15:35:25,141 INFO model_utilization task_creation started 
+2022-10-18 15:35:25,146 ERROR Error while task_creation index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 15:35:25,147 INFO model_utilization task_creation ended 
+2022-10-18 15:58:02,445 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 15:58:03,112 INFO ------------Prediction Started------------ 
+2022-10-18 16:00:31,336 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:00:31,971 INFO ------------Prediction Started------------ 
+2022-10-18 16:03:22,139 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:03:22,770 INFO ------------Prediction Started------------ 
+2022-10-18 16:03:22,812 INFO model_utilization task_creation started 
+2022-10-18 16:03:22,818 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:03:22,819 INFO model_utilization task_creation ended 
+2022-10-18 16:04:49,410 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:04:50,037 INFO ------------Prediction Started------------ 
+2022-10-18 16:04:50,076 INFO model_utilization task_creation started 
+2022-10-18 16:04:50,084 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:04:50,085 INFO model_utilization task_creation ended 
+2022-10-18 16:08:59,471 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:09:00,250 INFO ------------Prediction Started------------ 
+2022-10-18 16:09:00,292 INFO model_utilization task_creation started 
+2022-10-18 16:09:13,528 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:09:14,227 INFO ------------Prediction Started------------ 
+2022-10-18 16:09:14,270 INFO model_utilization task_creation started 
+2022-10-18 16:09:14,283 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:09:14,283 INFO model_utilization task_creation ended 
+2022-10-18 16:15:29,358 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:15:30,106 INFO ------------Prediction Started------------ 
+2022-10-18 16:15:30,145 INFO model_utilization task_creation started 
+2022-10-18 16:15:30,157 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:15:30,157 INFO model_utilization task_creation ended 
+2022-10-18 16:17:08,669 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:17:09,449 INFO ------------Prediction Started------------ 
+2022-10-18 16:17:09,485 INFO model_utilization task_creation started 
+2022-10-18 16:17:09,517 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:17:09,518 INFO model_utilization task_creation ended 
+2022-10-18 16:17:48,051 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:17:48,698 INFO ------------Prediction Started------------ 
+2022-10-18 16:17:48,755 INFO model_utilization task_creation started 
+2022-10-18 16:17:48,778 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:17:48,778 INFO model_utilization task_creation ended 
+2022-10-18 16:18:18,190 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:18:18,840 INFO ------------Prediction Started------------ 
+2022-10-18 16:18:18,882 INFO model_utilization task_creation started 
+2022-10-18 16:18:18,890 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:18:18,891 INFO model_utilization task_creation ended 
+2022-10-18 16:19:01,110 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:19:01,751 INFO ------------Prediction Started------------ 
+2022-10-18 16:19:01,793 INFO model_utilization task_creation started 
+2022-10-18 16:19:01,803 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:19:01,804 INFO model_utilization task_creation ended 
+2022-10-18 16:20:59,956 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:21:00,597 INFO ------------Prediction Started------------ 
+2022-10-18 16:21:00,633 INFO model_utilization task_creation started 
+2022-10-18 16:21:00,643 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:21:00,643 INFO model_utilization task_creation ended 
+2022-10-18 16:22:46,502 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:22:47,222 INFO ------------Prediction Started------------ 
+2022-10-18 16:22:47,258 INFO model_utilization task_creation started 
+2022-10-18 16:22:47,267 ERROR Error while task_creation: 'module' object is not callable 
+2022-10-18 16:22:47,267 INFO model_utilization task_creation ended 
+2022-10-18 16:27:07,476 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:27:08,129 INFO ------------Prediction Started------------ 
+2022-10-18 16:27:08,167 INFO model_utilization task_creation started 
+2022-10-18 16:27:08,180 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:27:08,180 INFO model_utilization task_creation ended 
+2022-10-18 16:27:17,240 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:27:17,877 INFO ------------Prediction Started------------ 
+2022-10-18 16:27:17,914 INFO model_utilization task_creation started 
+2022-10-18 16:27:17,926 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:27:17,926 INFO model_utilization task_creation ended 
+2022-10-18 16:28:26,442 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:28:27,081 INFO ------------Prediction Started------------ 
+2022-10-18 16:28:27,123 INFO model_utilization task_creation started 
+2022-10-18 16:28:27,134 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:28:27,135 INFO model_utilization task_creation ended 
+2022-10-18 16:35:47,400 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:35:48,032 INFO ------------Prediction Started------------ 
+2022-10-18 16:35:48,075 INFO model_utilization task_creation started 
+2022-10-18 16:37:23,632 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:37:24,289 INFO ------------Prediction Started------------ 
+2022-10-18 16:37:24,327 INFO model_utilization task_creation started 
+2022-10-18 16:37:37,751 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:37:38,425 INFO ------------Prediction Started------------ 
+2022-10-18 16:37:38,462 INFO model_utilization task_creation started 
+2022-10-18 16:37:38,476 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:37:38,476 INFO model_utilization task_creation ended 
+2022-10-18 16:38:25,496 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:38:26,136 INFO ------------Prediction Started------------ 
+2022-10-18 16:38:26,173 INFO model_utilization task_creation started 
+2022-10-18 16:38:26,178 ERROR Error while task_creation: 'module' object is not callable 
+2022-10-18 16:38:26,179 INFO model_utilization task_creation ended 
+2022-10-18 16:39:42,608 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:39:43,249 INFO ------------Prediction Started------------ 
+2022-10-18 16:39:43,287 INFO model_utilization task_creation started 
+2022-10-18 16:39:43,295 ERROR Error while task_creation: module 'os' has no attribute 'my_file' 
+2022-10-18 16:39:43,295 INFO model_utilization task_creation ended 
+2022-10-18 16:40:22,000 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:40:22,654 INFO ------------Prediction Started------------ 
+2022-10-18 16:40:22,693 INFO model_utilization task_creation started 
+2022-10-18 16:40:22,699 ERROR Error while task_creation: module 'ntpath' has no attribute 'my_file' 
+2022-10-18 16:40:22,699 INFO model_utilization task_creation ended 
+2022-10-18 16:40:43,303 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:40:43,949 INFO ------------Prediction Started------------ 
+2022-10-18 16:40:43,989 INFO model_utilization task_creation started 
+2022-10-18 16:40:43,995 ERROR Error while task_creation: module 'ntpath' has no attribute 'is_file' 
+2022-10-18 16:40:43,995 INFO model_utilization task_creation ended 
+2022-10-18 16:41:33,433 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:41:34,080 INFO ------------Prediction Started------------ 
+2022-10-18 16:41:34,118 INFO model_utilization task_creation started 
+2022-10-18 16:41:34,124 ERROR Error while task_creation: 'module' object is not callable 
+2022-10-18 16:41:34,124 INFO model_utilization task_creation ended 
+2022-10-18 16:41:54,106 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:41:54,775 INFO ------------Prediction Started------------ 
+2022-10-18 16:41:54,814 INFO model_utilization task_creation started 
+2022-10-18 16:41:54,821 ERROR Error while task_creation: module 'ntpath' has no attribute 'is_file' 
+2022-10-18 16:41:54,821 INFO model_utilization task_creation ended 
+2022-10-18 16:42:15,418 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:42:16,114 INFO ------------Prediction Started------------ 
+2022-10-18 16:42:16,154 INFO model_utilization task_creation started 
+2022-10-18 16:42:16,161 ERROR Error while task_creation: module 'ntpath' has no attribute 'is_file' 
+2022-10-18 16:42:16,161 INFO model_utilization task_creation ended 
+2022-10-18 16:42:51,301 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:42:51,957 INFO ------------Prediction Started------------ 
+2022-10-18 16:42:51,996 INFO model_utilization task_creation started 
+2022-10-18 16:42:52,004 ERROR Error while task_creation: 'str' object has no attribute 'is_file' 
+2022-10-18 16:42:52,004 INFO model_utilization task_creation ended 
+2022-10-18 16:43:29,299 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:43:29,966 INFO ------------Prediction Started------------ 
+2022-10-18 16:43:30,006 INFO model_utilization task_creation started 
+2022-10-18 16:43:30,015 ERROR Error while task_creation: module 'ntpath' has no attribute 'is_file' 
+2022-10-18 16:43:30,016 INFO model_utilization task_creation ended 
+2022-10-18 16:43:47,896 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 16:43:48,620 INFO ------------Prediction Started------------ 
+2022-10-18 16:43:48,664 INFO model_utilization task_creation started 
+2022-10-18 16:43:48,680 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 16:43:48,681 INFO model_utilization task_creation ended 
+2022-10-18 17:00:04,520 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:00:05,121 INFO ------------Prediction Started------------ 
+2022-10-18 17:00:05,162 INFO model_utilization task_creation started 
+2022-10-18 17:00:05,173 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 17:00:05,173 INFO model_utilization task_creation ended 
+2022-10-18 17:02:05,772 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:02:06,436 INFO ------------Prediction Started------------ 
+2022-10-18 17:02:06,477 INFO model_utilization task_creation started 
+2022-10-18 17:02:06,491 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 17:02:06,492 INFO model_utilization task_creation ended 
+2022-10-18 17:02:18,262 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:02:18,902 INFO ------------Prediction Started------------ 
+2022-10-18 17:02:18,940 INFO model_utilization task_creation started 
+2022-10-18 17:02:18,947 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 17:02:18,948 INFO model_utilization task_creation ended 
+2022-10-18 17:06:59,181 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:06:59,814 INFO ------------Prediction Started------------ 
+2022-10-18 17:06:59,854 INFO model_utilization task_creation started 
+2022-10-18 17:06:59,864 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 17:06:59,865 INFO model_utilization task_creation ended 
+2022-10-18 17:08:30,944 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:08:31,589 INFO ------------Prediction Started------------ 
+2022-10-18 17:08:31,629 INFO model_utilization task_creation started 
+2022-10-18 17:08:31,642 ERROR Error while task_creation: index 3 is out of bounds for axis 0 with size 3 
+2022-10-18 17:08:31,642 INFO model_utilization task_creation ended 
+2022-10-18 17:11:55,472 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:11:56,187 INFO ------------Prediction Started------------ 
+2022-10-18 17:11:56,228 INFO model_utilization task_creation started 
+2022-10-18 17:11:56,311 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:11:56,457 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 17:11:56,532 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 17:11:56,533 INFO model_utilization task_creation ended 
+2022-10-18 17:11:59,164 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:11:59,845 INFO ------------Prediction Started------------ 
+2022-10-18 17:11:59,884 INFO model_utilization task_creation started 
+2022-10-18 17:11:59,951 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:12:00,089 DEBUG TBB already found in load path 
+2022-10-18 17:12:00,123 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 17:12:00,123 INFO model_utilization task_creation ended 
+2022-10-18 17:14:34,376 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:14:35,051 INFO ------------Prediction Started------------ 
+2022-10-18 17:14:35,093 INFO model_utilization task_creation started 
+2022-10-18 17:14:35,179 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:14:35,431 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 17:14:35,512 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 17:14:35,513 INFO model_utilization task_creation ended 
+2022-10-18 17:14:38,715 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:14:39,690 INFO ------------Prediction Started------------ 
+2022-10-18 17:14:39,754 INFO model_utilization task_creation started 
+2022-10-18 17:14:39,862 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:14:40,017 DEBUG TBB already found in load path 
+2022-10-18 17:14:40,051 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 17:14:40,051 INFO model_utilization task_creation ended 
+2022-10-18 17:20:49,544 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:20:50,265 INFO ------------Prediction Started------------ 
+2022-10-18 17:20:50,308 INFO model_utilization task_creation started 
+2022-10-18 17:20:50,379 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:20:50,525 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 17:20:50,568 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 17:20:50,569 INFO model_utilization task_creation ended 
+2022-10-18 17:20:52,993 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:20:53,688 INFO ------------Prediction Started------------ 
+2022-10-18 17:20:53,728 INFO model_utilization task_creation started 
+2022-10-18 17:20:53,802 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:20:53,960 DEBUG TBB already found in load path 
+2022-10-18 17:20:54,005 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 17:20:54,005 INFO model_utilization task_creation ended 
+2022-10-18 17:21:52,069 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:21:52,731 INFO ------------Prediction Started------------ 
+2022-10-18 17:21:52,771 INFO model_utilization task_creation started 
+2022-10-18 17:21:52,837 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:21:52,976 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 17:21:53,038 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 17:21:53,039 INFO model_utilization task_creation ended 
+2022-10-18 17:21:55,773 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:21:56,457 INFO ------------Prediction Started------------ 
+2022-10-18 17:21:56,499 INFO model_utilization task_creation started 
+2022-10-18 17:21:56,571 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:21:56,729 DEBUG TBB already found in load path 
+2022-10-18 17:21:56,784 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 17:21:56,784 INFO model_utilization task_creation ended 
+2022-10-18 17:45:13,951 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:45:14,647 INFO ------------Prediction Started------------ 
+2022-10-18 17:45:14,698 INFO model_utilization task_creation started 
+2022-10-18 17:45:14,778 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:45:14,993 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 17:45:15,029 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 17:45:15,029 INFO model_utilization task_creation ended 
+2022-10-18 17:45:17,446 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:45:18,106 INFO ------------Prediction Started------------ 
+2022-10-18 17:45:18,146 INFO model_utilization task_creation started 
+2022-10-18 17:45:18,211 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:45:18,364 DEBUG TBB already found in load path 
+2022-10-18 17:45:18,389 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 17:45:18,390 INFO model_utilization task_creation ended 
+2022-10-18 17:55:33,470 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:55:34,170 INFO ------------Prediction Started------------ 
+2022-10-18 17:55:34,211 INFO model_utilization task_creation started 
+2022-10-18 17:55:34,275 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:55:34,458 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 17:55:34,497 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 17:55:34,498 INFO model_utilization task_creation ended 
+2022-10-18 17:55:37,382 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:55:38,031 INFO ------------Prediction Started------------ 
+2022-10-18 17:55:38,069 INFO model_utilization task_creation started 
+2022-10-18 17:55:38,140 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:55:38,285 DEBUG TBB already found in load path 
+2022-10-18 17:55:38,311 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 17:55:38,311 INFO model_utilization task_creation ended 
+2022-10-18 17:57:28,348 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:57:29,159 INFO ------------Prediction Started------------ 
+2022-10-18 17:57:29,199 INFO model_utilization task_creation started 
+2022-10-18 17:57:29,267 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:57:29,396 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 17:57:29,429 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 17:57:29,429 INFO model_utilization task_creation ended 
+2022-10-18 17:57:31,830 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:57:32,558 INFO ------------Prediction Started------------ 
+2022-10-18 17:57:32,600 INFO model_utilization task_creation started 
+2022-10-18 17:57:32,675 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:57:32,823 DEBUG TBB already found in load path 
+2022-10-18 17:57:32,853 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 17:57:32,853 INFO model_utilization task_creation ended 
+2022-10-18 17:58:21,310 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:58:21,965 INFO ------------Prediction Started------------ 
+2022-10-18 17:58:22,006 INFO model_utilization task_creation started 
+2022-10-18 17:58:22,070 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:58:22,210 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 17:58:22,245 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 17:58:22,246 INFO model_utilization task_creation ended 
+2022-10-18 17:58:24,763 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 17:58:25,426 INFO ------------Prediction Started------------ 
+2022-10-18 17:58:25,465 INFO model_utilization task_creation started 
+2022-10-18 17:58:25,532 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 17:58:25,679 DEBUG TBB already found in load path 
+2022-10-18 17:58:25,706 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 17:58:25,707 INFO model_utilization task_creation ended 
+2022-10-18 18:06:02,780 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 18:06:03,460 INFO ------------Prediction Started------------ 
+2022-10-18 18:06:03,501 INFO model_utilization task_creation started 
+2022-10-18 18:06:03,575 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:06:03,718 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 18:06:03,754 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 18:06:03,754 INFO model_utilization task_creation ended 
+2022-10-18 18:06:06,437 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 18:06:07,093 INFO ------------Prediction Started------------ 
+2022-10-18 18:06:07,135 INFO model_utilization task_creation started 
+2022-10-18 18:06:07,201 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:06:07,335 DEBUG TBB already found in load path 
+2022-10-18 18:06:07,361 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 18:06:07,361 INFO model_utilization task_creation ended 
+2022-10-18 18:20:23,962 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 18:20:24,637 INFO ------------Prediction Started------------ 
+2022-10-18 18:20:24,676 INFO model_utilization task_creation started 
+2022-10-18 18:20:24,741 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:20:24,880 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 18:20:24,902 ERROR Error while task_creation: can only join a started process 
+2022-10-18 18:20:24,903 INFO model_utilization task_creation ended 
+2022-10-18 18:21:10,249 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 18:21:10,918 INFO ------------Prediction Started------------ 
+2022-10-18 18:21:10,959 INFO model_utilization task_creation started 
+2022-10-18 18:21:11,028 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:21:11,171 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 18:21:11,199 INFO model_utilization task_creation ended 
+2022-10-18 18:22:21,043 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 18:22:21,710 INFO ------------Prediction Started------------ 
+2022-10-18 18:22:21,754 INFO model_utilization task_creation started 
+2022-10-18 18:22:21,824 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:22:21,978 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 18:22:22,013 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-18 18:22:22,014 INFO model_utilization task_creation ended 
+2022-10-18 18:22:24,537 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 18:22:25,246 INFO ------------Prediction Started------------ 
+2022-10-18 18:22:25,290 INFO model_utilization task_creation started 
+2022-10-18 18:22:25,362 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:22:25,503 DEBUG TBB already found in load path 
+2022-10-18 18:22:25,531 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-18 18:22:25,531 INFO model_utilization task_creation ended 
+2022-10-18 18:26:53,355 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 18:26:54,017 INFO ------------Prediction Started------------ 
+2022-10-18 18:26:54,058 INFO model_utilization task_creation started 
+2022-10-18 18:26:54,123 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:26:54,259 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 18:26:54,295 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:26:54,436 DEBUG TBB already found in load path 
+2022-10-18 18:26:54,451 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-18 18:26:54,457 INFO model_utilization task_creation ended 
+2022-10-18 18:29:18,566 INFO ------------Initializing Prediction queries------------ 
+2022-10-18 18:29:19,405 INFO ------------Prediction Started------------ 
+2022-10-18 18:29:19,441 INFO model_utilization task_creation started 
+2022-10-18 18:29:19,510 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:29:19,650 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-18 18:29:19,687 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-18 18:29:19,879 DEBUG TBB already found in load path 
+2022-10-18 18:29:19,898 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-18 18:29:19,904 INFO model_utilization task_creation ended 

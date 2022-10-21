@@ -43,19 +43,19 @@ def prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Outpu
             with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
                 model = model_from_json(json.load(fin))
             model_last_date_dataframe = model.history_dates.tail(1)
-            print("exist1")
+            # print("\nexist1\n")
             
             #print(last_date)
-            print(future_dates)
+            print('\nfuture_dates: \n'+str(future_dates))
             prediction=model.predict(future_dates)
             #model.plot(prediction)
-            print("exist2")
+            # print("\nexist2\n")
                 
             df_final = future_dates.merge(prediction, how="outer")
             
             prediction['partition_col'] = Store_Code_Val
             #df_statistical_summary = df_statistical_summary.append(prediction, ignore_index=True)
-            
+            df_final.to_excel('testdf_final.xlsx')
             df_final = df_final.drop(['trend', 'yhat_lower', 'yhat_upper', 'trend_lower', 'trend_upper', 'additive_terms', 'additive_terms_lower'], axis =1)
             df_final = df_final.drop(['additive_terms_upper', 'yearly', 'yearly_lower', 'yearly_upper', 'multiplicative_terms', 'multiplicative_terms_lower', 'multiplicative_terms_upper'], axis =1)
             df_final = df_final.rename(columns = {'ds' : Output_Date_Col}, inplace = False)
@@ -73,6 +73,7 @@ def prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Outpu
             i = i+1
             #df_final["batch_no"] = batch_no
             df_final.reset_index(drop=True, inplace=True)
+            print(df_final)
             df_final.to_excel('df_final.xlsx')
             # df_final.to_sql(con=database_connection, name= output_table_name, if_exists='append', index= False)
             global final_dataframe
@@ -103,9 +104,11 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
         #Changes here
         from_date = pd.to_datetime(df_Source[From_Date_Col].iloc[0])
         to_date = pd.to_datetime(df_Source[To_Date_Col].iloc[0])
+        print('from_date: '+str(from_date))
+        print('to_date: '+str(to_date))
         
-        #from_date = pd.to_datetime('2021-06-19')
-        #to_date = pd.to_datetime('2021-07-17')
+        # from_date = pd.to_datetime('2021-06-19')
+        # to_date = pd.to_datetime('2021-07-17')
         
         
         Model_Type  = df_Source[[Model_Type_col_name, partition_col]]
@@ -164,15 +167,21 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
                     model = model_from_json(json.load(fin))
                 model_last_date_dataframe = model.history_dates.tail(1)
                 #print(model.history_dates.tail(10))
+                
                 last_date = pd.to_datetime(model_last_date_dataframe)
                 #print(model_last_date_dataframe)
+                print('last_date: '+str(last_date))
                 nw = ((to_date-last_date)/30).dt.days.astype('int')
+                print(nw)
                 n = nw.iloc[0]
-                future_dates=model.make_future_dataframe(periods=n, freq = 'w') # freq = m change weekly beacuse df was empty
+                print('periods:' +str(n))
+                print('model: '+str(model))
+                future_dates=model.make_future_dataframe(periods=n, freq = 'M') # freq = m change weekly beacuse df was empty
                 # print(future_dates.iloc[-n:])
                 # print(future_dates)
                 #dates = (future_dates.iloc[-n:]) + pd.to_timedelta(1, unit = 'm')
                 dates = (future_dates.iloc[-n:])
+                print('dates: '+str(dates))
                 future_dates.drop(future_dates.tail(n).index,inplace=True)
                 future_dates = pd.concat([future_dates, dates])
                 future_dates['ds']=pd.to_datetime(future_dates['ds'])
@@ -207,7 +216,7 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
             l = uniqueValues[(i*a) : (i+1)*a]
             print(l)
         print(future_dates)
-        l = 'VETINA-Antibiotics -Cat_3' 
+        l = 'VETINA-Antibiotics -Cat_2' 
         prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, Model_Type, database_connection, output_table_name, i)
 
             # p = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 

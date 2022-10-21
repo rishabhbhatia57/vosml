@@ -56,15 +56,16 @@ model_last_date_col   = 'DM8'
 from_date_col         = 'From_Date'
 to_date_col            = 'To_Date'
 output_table_name = 'R_OutputTable'
-frequency      = 'm'
+frequency      = 'w'
 
 parallel_processes = 1
-debug_mode = 'OFF'
+debug_mode = 'ON'
 
 
 
 print("------------Initializing Prediction queries------------")
 logger.info("------------Initializing Prediction queries------------")
+print('Selected Debug mode: '+debug_mode)
 #sql_query = 'select distinct p.dimkey from test.fossil_performbi p,(select a.dimkey from test.fossil_performbi a group by a.dimkey having count(a.dimkey)>2) q where p.dimkey = q.dimkey'
 Prediction_sql_query = 'Select ' + from_date_col + ',' +  to_date_col  + ',' + partition_col + ',' + model_type_col_name + ' From ' + db_name + "." + input_table_name
 df_R_InputTable = pd.read_excel('Data.xlsx', sheet_name ='R_InputTable')
@@ -111,9 +112,17 @@ database_connection = sqlalchemy.create_engine('mysql+mysqlconnector://{0}:%s@{1
 #                                                                 output_table_name, result_not_created))
 
 logger.info("model_utilization task_creation started")
+Arguments = [df_sql_data, from_date_col, to_date_col, model_type_col_name, partition_col, database_connection, 
+                                       model_path, model_prefix, frequency, output_date_col, output_prediction_col, output_partition_col, 
+                                       model_last_date_col, output_table_name, parallel_processes, debug_mode]
+print('\n')
+for i in range(len(Arguments)) :
+    print(str(i)+": "+str(Arguments[i])) 
+print('\n')                                    
 model_utilization.task_creation(df_sql_data, from_date_col, to_date_col, model_type_col_name, partition_col, database_connection, 
                                        model_path, model_prefix, frequency, output_date_col, output_prediction_col, output_partition_col, 
                                        model_last_date_col, output_table_name, parallel_processes, debug_mode)
+
 logger.info("model_utilization task_creation ended")
 #await main_task
 

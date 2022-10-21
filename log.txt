@@ -301,3 +301,31 @@ cwd: None
 cwd: None 
 2022-10-21 16:14:05,428 DEBUG TBB already found in load path 
 2022-10-21 16:14:05,950 INFO model_utilization task_creation ended 
+2022-10-21 16:34:50,821 INFO ------------Initializing Prediction queries------------ 
+2022-10-21 16:34:51,513 INFO ------------Prediction Started------------ 
+2022-10-21 16:34:51,561 INFO model_utilization task_creation started 
+2022-10-21 16:34:51,689 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-21 16:34:51,819 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-21 16:34:51,901 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-21 16:34:52,053 DEBUG TBB already found in load path 
+2022-10-21 16:34:52,585 INFO model_utilization task_creation ended 
+2022-10-21 16:36:25,408 INFO ------------Initializing Prediction queries------------ 
+2022-10-21 16:36:26,224 INFO ------------Prediction Started------------ 
+2022-10-21 16:36:26,264 INFO model_utilization task_creation started 
+2022-10-21 16:36:26,400 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-21 16:36:26,532 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-21 16:36:26,549 ERROR Error while task_creation: can only concatenate str (not "type") to str 
+2022-10-21 16:36:26,549 INFO model_utilization task_creation ended 
+2022-10-21 16:36:44,963 INFO ------------Initializing Prediction queries------------ 
+2022-10-21 16:36:45,722 INFO ------------Prediction Started------------ 
+2022-10-21 16:36:45,770 INFO model_utilization task_creation started 
+2022-10-21 16:36:45,922 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-21 16:36:46,080 DEBUG Adding TBB (C:\Users\HP\Desktop\CBIA Projects\Vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-21 16:36:46,177 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-21 16:36:46,346 DEBUG TBB already found in load path 
+2022-10-21 16:36:47,212 INFO model_utilization task_creation ended 

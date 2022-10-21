@@ -170,7 +170,8 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
                 
                 last_date = pd.to_datetime(model_last_date_dataframe)
                 #print(model_last_date_dataframe)
-                print('last_date: '+str(last_date))
+                print('last_date: '+str(last_date) +str(type(last_date)))
+                print('Diff: ' + str(to_date-last_date))
                 nw = ((to_date-last_date)/30).dt.days.astype('int')
                 print(nw)
                 n = nw.iloc[0]

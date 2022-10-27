@@ -339,3 +339,120 @@ cwd: None
 cwd: None 
 2022-10-27 11:06:00,389 DEBUG TBB already found in load path 
 2022-10-27 11:06:00,956 INFO model_utilization task_creation ended 
+2022-10-27 15:09:54,548 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 15:09:55,168 INFO ------------Prediction Started------------ 
+2022-10-27 15:09:55,231 INFO model_utilization task_creation started 
+2022-10-27 15:09:55,374 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:09:55,783 DEBUG Adding TBB (C:\Users\HP\AppData\Roaming\Python\Python310\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 15:09:55,921 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:09:56,329 DEBUG TBB already found in load path 
+2022-10-27 15:09:56,343 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-27 15:09:56,353 INFO model_utilization task_creation ended 
+2022-10-27 15:17:15,950 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 15:17:16,312 INFO ------------Prediction Started------------ 
+2022-10-27 15:17:16,350 INFO model_utilization task_creation started 
+2022-10-27 15:17:16,443 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:17:16,572 DEBUG Adding TBB (C:\Users\HP\AppData\Roaming\Python\Python310\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 15:17:16,716 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:17:16,956 DEBUG TBB already found in load path 
+2022-10-27 15:17:16,987 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-27 15:17:16,994 INFO model_utilization task_creation ended 
+2022-10-27 15:21:59,279 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 15:21:59,633 INFO ------------Prediction Started------------ 
+2022-10-27 15:21:59,669 INFO model_utilization task_creation started 
+2022-10-27 15:21:59,757 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:21:59,883 DEBUG Adding TBB (C:\Users\HP\AppData\Roaming\Python\Python310\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 15:21:59,994 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:22:00,138 DEBUG TBB already found in load path 
+2022-10-27 15:22:00,580 INFO model_utilization task_creation ended 
+2022-10-27 15:34:10,293 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 15:34:10,808 INFO ------------Prediction Started------------ 
+2022-10-27 15:34:10,861 INFO model_utilization task_creation started 
+2022-10-27 15:34:10,997 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:34:11,120 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 15:34:11,241 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:34:11,381 DEBUG TBB already found in load path 
+2022-10-27 15:34:11,786 INFO model_utilization task_creation ended 
+2022-10-27 15:39:18,735 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 15:39:19,170 INFO ------------Prediction Started------------ 
+2022-10-27 15:39:19,284 INFO model_utilization task_creation started 
+2022-10-27 15:39:19,412 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:39:19,575 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 15:39:19,724 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 15:39:19,920 DEBUG TBB already found in load path 
+2022-10-27 15:39:20,448 ERROR Error while prediction: the JSON object must be str, bytes or bytearray, not dict 
+2022-10-27 15:39:20,454 INFO model_utilization task_creation ended 
+2022-10-27 16:05:15,721 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 16:05:16,303 INFO ------------Prediction Started------------ 
+2022-10-27 16:05:16,339 INFO model_utilization task_creation started 
+2022-10-27 16:05:16,416 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:05:16,558 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 16:05:16,635 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:05:16,770 DEBUG TBB already found in load path 
+2022-10-27 16:05:17,154 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:05:17,286 DEBUG TBB already found in load path 
+2022-10-27 16:05:17,632 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:05:17,767 DEBUG TBB already found in load path 
+2022-10-27 16:05:18,151 INFO model_utilization task_creation ended 
+2022-10-27 16:09:59,628 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 16:10:00,089 INFO ------------Prediction Started------------ 
+2022-10-27 16:10:00,130 INFO model_utilization task_creation started 
+2022-10-27 16:10:00,206 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:10:00,333 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 16:10:00,467 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:10:00,600 DEBUG TBB already found in load path 
+2022-10-27 16:10:00,961 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:10:01,106 DEBUG TBB already found in load path 
+2022-10-27 16:10:01,451 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:10:01,585 DEBUG TBB already found in load path 
+2022-10-27 16:10:01,967 INFO model_utilization task_creation ended 
+2022-10-27 16:13:18,013 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 16:13:18,453 INFO ------------Prediction Started------------ 
+2022-10-27 16:13:18,485 INFO model_utilization task_creation started 
+2022-10-27 16:13:18,565 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:13:18,690 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 16:13:18,778 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:13:18,914 DEBUG TBB already found in load path 
+2022-10-27 16:13:19,267 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:13:19,400 DEBUG TBB already found in load path 
+2022-10-27 16:13:19,685 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:13:19,832 DEBUG TBB already found in load path 
+2022-10-27 16:13:20,176 INFO model_utilization task_creation ended 
+2022-10-27 16:14:07,017 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 16:14:07,404 INFO ------------Prediction Started------------ 
+2022-10-27 16:14:07,440 INFO model_utilization task_creation started 
+2022-10-27 16:14:07,518 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:14:07,637 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 16:14:07,711 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:14:07,854 DEBUG TBB already found in load path 
+2022-10-27 16:14:08,202 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:14:08,338 DEBUG TBB already found in load path 
+2022-10-27 16:14:08,619 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 16:14:08,765 DEBUG TBB already found in load path 
+2022-10-27 16:14:09,080 INFO model_utilization task_creation ended 

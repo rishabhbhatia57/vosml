@@ -36,55 +36,55 @@ def prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Outpu
             Store_Code_Val = x
             
         
-        my_file = Path(Model_path + model_prefix + Store_Code_Val + '.json')
-        if my_file.is_file():
-            # print("exist")
-            
-            with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
-                model = model_from_json(json.load(fin))
-            model_last_date_dataframe = model.history_dates.tail(1)
-            # print("\nexist1\n")
-            
-            #print(last_date)
-            print('\nfuture_dates: \n'+str(future_dates))
-            prediction=model.predict(future_dates)
-            #model.plot(prediction)
-            # print("\nexist2\n")
+            my_file = Path(Model_path + model_prefix + Store_Code_Val + '.json')
+            if my_file.is_file():
+                # print("exist")
                 
-            df_final = future_dates.merge(prediction, how="outer")
-            
-            prediction['partition_col'] = Store_Code_Val
-            #df_statistical_summary = df_statistical_summary.append(prediction, ignore_index=True)
-            df_final.to_excel('testdf_final.xlsx')
-            df_final = df_final.drop(['trend', 'yhat_lower', 'yhat_upper', 'trend_lower', 'trend_upper', 'additive_terms', 'additive_terms_lower'], axis =1)
-            df_final = df_final.drop(['additive_terms_upper', 'yearly', 'yearly_lower', 'yearly_upper', 'multiplicative_terms', 'multiplicative_terms_lower', 'multiplicative_terms_upper'], axis =1)
-            df_final = df_final.rename(columns = {'ds' : Output_Date_Col}, inplace = False)
-            df_final = df_final.rename(columns = {'yhat' : Output_Prediction_col}, inplace = False)
-            df_final[partition_col] = Store_Code_Val 
-            df_final = df_final.rename(columns = {'UniqueKey' : Output_Partition_Col}, inplace = False)
-            df_final[Model_Last_Date_Col] = str(model_last_date_dataframe.iloc[0])
-            #changes here
-            #df_final["Last Date of Data"].iloc[0] = str(model_last_date_dataframe.iloc[0])
-            df_final[From_Date_Col] = from_date
-            df_final[To_Date_Col] = to_date
-            #print((Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == Store_Code_Val]))
-            
-            df_final[Model_Type_col_name] = (Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == Store_Code_Val])#.item()
-            i = i+1
-            #df_final["batch_no"] = batch_no
-            df_final.reset_index(drop=True, inplace=True)
-            print(df_final)
-            df_final.to_excel('df_final.xlsx')
-            # df_final.to_sql(con=database_connection, name= output_table_name, if_exists='append', index= False)
-            global final_dataframe
-            final_dataframe = final_dataframe.append(df_final, ignore_index=True)
-            
-        else:
-            #print(Store_Code_Val + ' Does not exist')
-            result_not_created.append(Store_Code_Val)
+                with open(Model_path + model_prefix + Store_Code_Val + '.json', 'r') as fin:
+                    model = model_from_json(json.load(fin))
+                model_last_date_dataframe = model.history_dates.tail(1)
+                # print("\nexist1\n")
+                
+                #print(last_date)
+                # print('\nfuture_dates: \n'+str(future_dates))
+                prediction=model.predict(future_dates)
+                #model.plot(prediction)
+                # print("\nexist2\n")
+                    
+                df_final = future_dates.merge(prediction, how="outer")
+                
+                prediction['partition_col'] = Store_Code_Val
+                #df_statistical_summary = df_statistical_summary.append(prediction, ignore_index=True)
+                # df_final.to_excel('testdf_final.xlsx')
+                df_final = df_final.drop(['trend', 'yhat_lower', 'yhat_upper', 'trend_lower', 'trend_upper', 'additive_terms', 'additive_terms_lower'], axis =1)
+                df_final = df_final.drop(['additive_terms_upper', 'yearly', 'yearly_lower', 'yearly_upper', 'multiplicative_terms', 'multiplicative_terms_lower', 'multiplicative_terms_upper'], axis =1)
+                df_final = df_final.rename(columns = {'ds' : Output_Date_Col}, inplace = False)
+                df_final = df_final.rename(columns = {'yhat' : Output_Prediction_col}, inplace = False)
+                df_final[partition_col] = Store_Code_Val 
+                df_final = df_final.rename(columns = {'UniqueKey' : Output_Partition_Col}, inplace = False)
+                df_final[Model_Last_Date_Col] = str(model_last_date_dataframe.iloc[0])
+                #changes here
+                #df_final["Last Date of Data"].iloc[0] = str(model_last_date_dataframe.iloc[0])
+                df_final[From_Date_Col] = from_date
+                df_final[To_Date_Col] = to_date
+                #print((Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == Store_Code_Val]))
+                
+                df_final[Model_Type_col_name] = (Model_Type[Model_Type_col_name].loc[Model_Type[partition_col] == Store_Code_Val])#.item()
+                i = i+1
+                #df_final["batch_no"] = batch_no
+                df_final.reset_index(drop=True, inplace=True)
+                print(df_final)
+                df_final.to_excel(str(x)+'_df_final.xlsx')
+                # df_final.to_sql(con=database_connection, name= output_table_name, if_exists='append', index= False)
+                global final_dataframe
+                final_dataframe = final_dataframe.append(df_final, ignore_index=True)
+                
+            else:
+                #print(Store_Code_Val + ' Does not exist')
+                result_not_created.append(Store_Code_Val)
 
-        #print(x)
-        #final_dataframe.head(32)
+            #print(x)
+            #final_dataframe.head(32)
     except Exception as e:
         print("Error while prediction: "+str(e))
         exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -218,7 +218,7 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
         #     print(str((i*a)) + ' , ' + str((i+1)*a))
         #     l = uniqueValues[(i*a) : (i+1)*a]
         #     print(l)
-        print(future_dates)
+        # print(future_dates)
         l = uniqueValues
         prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, Model_Type, database_connection, output_table_name, i)
 

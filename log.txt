@@ -329,3 +329,13 @@ cwd: None
 cwd: None 
 2022-10-21 16:36:46,346 DEBUG TBB already found in load path 
 2022-10-21 16:36:47,212 INFO model_utilization task_creation ended 
+2022-10-27 11:05:59,567 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 11:05:59,916 INFO ------------Prediction Started------------ 
+2022-10-27 11:05:59,948 INFO model_utilization task_creation started 
+2022-10-27 11:06:00,037 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 11:06:00,170 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 11:06:00,254 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 11:06:00,389 DEBUG TBB already found in load path 
+2022-10-27 11:06:00,956 INFO model_utilization task_creation ended 

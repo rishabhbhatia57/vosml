@@ -45,8 +45,8 @@ input_table_name    = 'R_InputTable'
 #model_path          = 'E:/Jash/Procedural code/Models/'
 # model_path          = '/home/ubuntu/vosml/model/' + db_name + '/'
 
-model_path          = 'C:/Users/HP/Desktop/CBIA Projects/Vosml/model/'+db_name+'/'
-
+# model_path          = 'C:/Users/HP/Desktop/CBIA Projects/Vosml/model/'+db_name+'/'
+model_path          = 'E:/MPSTME/Sem 11 (Internship)/vosml/vosml/model/'+db_name+'/'
 #R_inputtable col names
 output_prediction_col = 'SM1'
 output_date_col       = 'DM7'

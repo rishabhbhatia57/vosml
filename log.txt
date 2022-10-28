@@ -456,3 +456,614 @@ cwd: None
 cwd: None 
 2022-10-27 16:14:08,765 DEBUG TBB already found in load path 
 2022-10-27 16:14:09,080 INFO model_utilization task_creation ended 
+2022-10-27 17:05:21,891 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:05:22,326 INFO ------------Prediction Started------------ 
+2022-10-27 17:05:22,357 INFO model_utilization task_creation started 
+2022-10-27 17:05:22,432 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:05:22,554 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:05:22,717 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-27 17:05:22,718 INFO model_utilization task_creation ended 
+2022-10-27 17:05:24,578 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:05:24,905 INFO ------------Prediction Started------------ 
+2022-10-27 17:05:24,936 INFO model_utilization task_creation started 
+2022-10-27 17:05:25,020 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:05:25,146 DEBUG TBB already found in load path 
+2022-10-27 17:05:25,230 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-27 17:05:25,231 INFO model_utilization task_creation ended 
+2022-10-27 17:05:53,831 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:05:54,162 INFO ------------Prediction Started------------ 
+2022-10-27 17:05:54,198 INFO model_utilization task_creation started 
+2022-10-27 17:05:54,277 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:05:54,395 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:05:54,496 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-27 17:05:54,497 INFO model_utilization task_creation ended 
+2022-10-27 17:05:56,524 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:05:56,850 INFO ------------Prediction Started------------ 
+2022-10-27 17:05:56,884 INFO model_utilization task_creation started 
+2022-10-27 17:05:56,971 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:05:57,096 DEBUG TBB already found in load path 
+2022-10-27 17:05:57,168 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-27 17:05:57,169 INFO model_utilization task_creation ended 
+2022-10-27 17:07:19,180 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:07:19,567 INFO ------------Prediction Started------------ 
+2022-10-27 17:07:19,606 INFO model_utilization task_creation started 
+2022-10-27 17:07:19,684 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:07:19,805 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:07:19,920 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-27 17:07:19,922 INFO model_utilization task_creation ended 
+2022-10-27 17:07:22,111 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:07:22,443 INFO ------------Prediction Started------------ 
+2022-10-27 17:07:22,479 INFO model_utilization task_creation started 
+2022-10-27 17:07:22,558 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:07:22,674 DEBUG TBB already found in load path 
+2022-10-27 17:07:22,758 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-27 17:07:22,759 INFO model_utilization task_creation ended 
+2022-10-27 17:15:00,278 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:15:00,763 INFO ------------Prediction Started------------ 
+2022-10-27 17:15:00,814 INFO model_utilization task_creation started 
+2022-10-27 17:15:00,914 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:15:01,033 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:15:01,134 ERROR Error while task_creation: can only join a started process 
+2022-10-27 17:15:01,135 INFO model_utilization task_creation ended 
+2022-10-27 17:15:33,852 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:15:34,187 INFO ------------Prediction Started------------ 
+2022-10-27 17:15:34,223 INFO model_utilization task_creation started 
+2022-10-27 17:15:34,304 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:15:34,430 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:15:34,519 ERROR Error while task_creation: can only join a started process 
+2022-10-27 17:15:34,520 INFO model_utilization task_creation ended 
+2022-10-27 17:18:12,532 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:18:12,880 INFO ------------Prediction Started------------ 
+2022-10-27 17:18:12,914 INFO model_utilization task_creation started 
+2022-10-27 17:26:59,007 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:26:59,465 INFO ------------Prediction Started------------ 
+2022-10-27 17:26:59,500 INFO model_utilization task_creation started 
+2022-10-27 17:26:59,577 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:26:59,700 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:26:59,786 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-27 17:26:59,787 INFO model_utilization task_creation ended 
+2022-10-27 17:27:01,974 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:27:02,350 INFO ------------Prediction Started------------ 
+2022-10-27 17:27:02,379 INFO model_utilization task_creation started 
+2022-10-27 17:27:02,455 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:27:02,576 DEBUG TBB already found in load path 
+2022-10-27 17:27:02,675 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-27 17:27:02,675 INFO model_utilization task_creation ended 
+2022-10-27 17:27:36,858 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:27:37,200 INFO ------------Prediction Started------------ 
+2022-10-27 17:27:37,232 INFO model_utilization task_creation started 
+2022-10-27 17:27:37,316 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:27:37,430 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:27:37,504 ERROR Error while task_creation: can only join a started process 
+2022-10-27 17:27:37,505 INFO model_utilization task_creation ended 
+2022-10-27 17:28:45,652 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:28:45,999 INFO ------------Prediction Started------------ 
+2022-10-27 17:28:46,035 INFO model_utilization task_creation started 
+2022-10-27 17:28:46,108 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:28:46,226 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:28:46,298 INFO model_utilization task_creation ended 
+2022-10-27 17:30:02,051 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:30:02,387 INFO ------------Prediction Started------------ 
+2022-10-27 17:30:02,421 INFO model_utilization task_creation started 
+2022-10-27 17:30:02,508 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:30:02,630 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:30:02,702 INFO model_utilization task_creation ended 
+2022-10-27 17:31:32,404 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:31:32,725 INFO ------------Prediction Started------------ 
+2022-10-27 17:31:32,760 INFO model_utilization task_creation started 
+2022-10-27 17:31:32,832 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:31:32,950 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:31:33,026 INFO model_utilization task_creation ended 
+2022-10-27 17:36:05,533 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:36:05,959 INFO ------------Prediction Started------------ 
+2022-10-27 17:36:05,994 INFO model_utilization task_creation started 
+2022-10-27 17:36:06,073 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:36:06,196 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-27 17:36:06,282 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-27 17:36:06,283 INFO model_utilization task_creation ended 
+2022-10-27 17:36:08,188 INFO ------------Initializing Prediction queries------------ 
+2022-10-27 17:36:08,533 INFO ------------Prediction Started------------ 
+2022-10-27 17:36:08,563 INFO model_utilization task_creation started 
+2022-10-27 17:36:08,637 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-27 17:36:08,757 DEBUG TBB already found in load path 
+2022-10-27 17:36:08,858 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-27 17:36:08,859 INFO model_utilization task_creation ended 
+2022-10-28 10:51:29,649 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 10:51:30,211 INFO ------------Prediction Started------------ 
+2022-10-28 10:51:30,270 INFO model_utilization task_creation started 
+2022-10-28 10:51:30,449 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 10:51:30,587 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-28 10:51:30,708 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-28 10:51:30,708 INFO model_utilization task_creation ended 
+2022-10-28 10:51:32,736 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 10:51:33,060 INFO ------------Prediction Started------------ 
+2022-10-28 10:51:33,092 INFO model_utilization task_creation started 
+2022-10-28 10:51:33,172 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 10:51:33,299 DEBUG TBB already found in load path 
+2022-10-28 10:51:33,382 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 10:51:33,383 INFO model_utilization task_creation ended 
+2022-10-28 11:42:42,415 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:42:42,817 INFO ------------Prediction Started------------ 
+2022-10-28 11:42:42,861 INFO model_utilization task_creation started 
+2022-10-28 11:42:42,961 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:42:43,246 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-28 11:42:43,357 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-28 11:42:43,357 INFO model_utilization task_creation ended 
+2022-10-28 11:42:45,647 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:42:46,027 INFO ------------Prediction Started------------ 
+2022-10-28 11:42:46,071 INFO model_utilization task_creation started 
+2022-10-28 11:42:46,176 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:42:46,311 DEBUG TBB already found in load path 
+2022-10-28 11:42:46,458 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:42:46,459 INFO model_utilization task_creation ended 
+2022-10-28 11:45:18,521 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:45:19,040 INFO ------------Prediction Started------------ 
+2022-10-28 11:45:19,086 INFO model_utilization task_creation started 
+2022-10-28 11:45:19,193 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:45:19,367 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-28 11:45:19,499 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-28 11:45:19,499 INFO model_utilization task_creation ended 
+2022-10-28 11:45:21,690 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:45:22,068 INFO ------------Prediction Started------------ 
+2022-10-28 11:45:22,118 INFO model_utilization task_creation started 
+2022-10-28 11:45:22,251 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:45:22,377 DEBUG TBB already found in load path 
+2022-10-28 11:45:22,470 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:45:22,471 INFO model_utilization task_creation ended 
+2022-10-28 11:47:22,043 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:47:22,483 INFO ------------Prediction Started------------ 
+2022-10-28 11:47:22,533 INFO model_utilization task_creation started 
+2022-10-28 11:47:22,600 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:47:22,723 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-28 11:47:22,800 ERROR Error while task_creation: Can't pickle local object 'create_engine.<locals>.connect' 
+2022-10-28 11:47:22,800 INFO model_utilization task_creation ended 
+2022-10-28 11:47:24,845 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:47:25,225 INFO ------------Prediction Started------------ 
+2022-10-28 11:47:25,300 INFO model_utilization task_creation started 
+2022-10-28 11:47:25,405 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:47:25,568 DEBUG TBB already found in load path 
+2022-10-28 11:47:25,649 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:47:25,651 INFO model_utilization task_creation ended 
+2022-10-28 11:49:57,585 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:49:58,159 INFO ------------Prediction Started------------ 
+2022-10-28 11:49:58,205 INFO model_utilization task_creation started 
+2022-10-28 11:49:58,295 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:49:58,421 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-28 11:50:00,529 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:50:00,874 INFO ------------Prediction Started------------ 
+2022-10-28 11:50:00,919 INFO model_utilization task_creation started 
+2022-10-28 11:50:00,992 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:50:01,120 DEBUG TBB already found in load path 
+2022-10-28 11:50:01,197 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:50:01,198 INFO model_utilization task_creation ended 
+2022-10-28 11:50:01,203 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:50:01,353 DEBUG TBB already found in load path 
+2022-10-28 11:50:03,975 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:50:04,357 INFO ------------Prediction Started------------ 
+2022-10-28 11:50:04,405 INFO model_utilization task_creation started 
+2022-10-28 11:50:04,476 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:50:04,605 DEBUG TBB already found in load path 
+2022-10-28 11:50:04,693 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:50:04,694 INFO model_utilization task_creation ended 
+2022-10-28 11:50:04,699 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:50:04,875 DEBUG TBB already found in load path 
+2022-10-28 11:50:05,271 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:50:05,432 DEBUG TBB already found in load path 
+2022-10-28 11:50:05,790 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:50:05,940 DEBUG TBB already found in load path 
+2022-10-28 11:50:06,600 INFO model_utilization task_creation ended 
+2022-10-28 11:54:20,627 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:54:21,009 INFO ------------Prediction Started------------ 
+2022-10-28 11:54:21,056 INFO model_utilization task_creation started 
+2022-10-28 11:54:21,123 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:54:21,295 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-28 11:54:23,284 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:54:23,637 INFO ------------Prediction Started------------ 
+2022-10-28 11:54:23,681 INFO model_utilization task_creation started 
+2022-10-28 11:54:23,748 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:54:23,874 DEBUG TBB already found in load path 
+2022-10-28 11:54:23,953 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:54:23,953 INFO model_utilization task_creation ended 
+2022-10-28 11:54:23,958 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:54:24,114 DEBUG TBB already found in load path 
+2022-10-28 11:54:26,629 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:54:26,996 INFO ------------Prediction Started------------ 
+2022-10-28 11:54:27,037 INFO model_utilization task_creation started 
+2022-10-28 11:54:27,112 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:54:27,237 DEBUG TBB already found in load path 
+2022-10-28 11:54:27,310 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:54:27,311 INFO model_utilization task_creation ended 
+2022-10-28 11:54:27,317 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:54:27,466 DEBUG TBB already found in load path 
+2022-10-28 11:54:27,836 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:54:27,977 DEBUG TBB already found in load path 
+2022-10-28 11:54:28,442 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:54:28,652 DEBUG TBB already found in load path 
+2022-10-28 11:54:29,258 INFO model_utilization task_creation ended 
+2022-10-28 11:55:40,173 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:55:40,539 INFO ------------Prediction Started------------ 
+2022-10-28 11:55:40,579 INFO model_utilization task_creation started 
+2022-10-28 11:55:40,649 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:55:40,779 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-28 11:55:42,838 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:55:43,250 INFO ------------Prediction Started------------ 
+2022-10-28 11:55:43,301 INFO model_utilization task_creation started 
+2022-10-28 11:55:43,383 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:55:43,524 DEBUG TBB already found in load path 
+2022-10-28 11:55:43,594 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:55:43,595 INFO model_utilization task_creation ended 
+2022-10-28 11:55:43,602 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:55:43,745 DEBUG TBB already found in load path 
+2022-10-28 11:55:46,135 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:55:46,602 INFO ------------Prediction Started------------ 
+2022-10-28 11:55:46,638 INFO model_utilization task_creation started 
+2022-10-28 11:55:46,710 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:55:46,840 DEBUG TBB already found in load path 
+2022-10-28 11:55:46,913 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:55:46,914 INFO model_utilization task_creation ended 
+2022-10-28 11:55:46,922 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:55:47,073 DEBUG TBB already found in load path 
+2022-10-28 11:55:47,429 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:55:47,580 DEBUG TBB already found in load path 
+2022-10-28 11:55:48,117 INFO model_utilization task_creation ended 
+2022-10-28 11:59:24,086 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:59:24,600 INFO ------------Prediction Started------------ 
+2022-10-28 11:59:24,647 INFO model_utilization task_creation started 
+2022-10-28 11:59:24,713 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:59:24,875 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-28 11:59:27,705 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:59:28,062 INFO ------------Prediction Started------------ 
+2022-10-28 11:59:28,106 INFO model_utilization task_creation started 
+2022-10-28 11:59:28,180 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:59:28,307 DEBUG TBB already found in load path 
+2022-10-28 11:59:28,371 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:59:28,372 INFO model_utilization task_creation ended 
+2022-10-28 11:59:28,378 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:59:28,548 DEBUG TBB already found in load path 
+2022-10-28 11:59:31,193 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 11:59:31,570 INFO ------------Prediction Started------------ 
+2022-10-28 11:59:31,667 INFO model_utilization task_creation started 
+2022-10-28 11:59:31,735 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:59:31,859 DEBUG TBB already found in load path 
+2022-10-28 11:59:31,929 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 11:59:31,930 INFO model_utilization task_creation ended 
+2022-10-28 11:59:31,933 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:59:32,088 DEBUG TBB already found in load path 
+2022-10-28 11:59:32,457 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:59:32,600 DEBUG TBB already found in load path 
+2022-10-28 11:59:32,910 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 11:59:33,053 DEBUG TBB already found in load path 
+2022-10-28 11:59:33,738 INFO model_utilization task_creation ended 
+2022-10-28 12:01:51,539 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 12:01:52,057 INFO ------------Prediction Started------------ 
+2022-10-28 12:01:52,126 INFO model_utilization task_creation started 
+2022-10-28 12:01:52,203 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 12:01:52,363 DEBUG Adding TBB (E:\MPSTME\Sem 11 (Internship)\vosml\vosml\vosml\lib\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-28 12:01:54,657 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 12:01:55,058 INFO ------------Prediction Started------------ 
+2022-10-28 12:01:55,108 INFO model_utilization task_creation started 
+2022-10-28 12:01:55,186 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 12:01:55,374 DEBUG TBB already found in load path 
+2022-10-28 12:01:55,461 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 12:01:55,462 INFO model_utilization task_creation ended 
+2022-10-28 12:01:55,467 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 12:01:55,641 DEBUG TBB already found in load path 
+2022-10-28 12:01:58,674 INFO ------------Initializing Prediction queries------------ 
+2022-10-28 12:01:59,086 INFO ------------Prediction Started------------ 
+2022-10-28 12:01:59,136 INFO model_utilization task_creation started 
+2022-10-28 12:01:59,247 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 12:01:59,392 DEBUG TBB already found in load path 
+2022-10-28 12:01:59,470 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-28 12:01:59,471 INFO model_utilization task_creation ended 
+2022-10-28 12:01:59,475 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 12:01:59,649 DEBUG TBB already found in load path 
+2022-10-28 12:02:00,090 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 12:02:00,269 DEBUG TBB already found in load path 
+2022-10-28 12:02:00,638 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-28 12:02:00,831 DEBUG TBB already found in load path 
+2022-10-28 12:02:01,488 INFO model_utilization task_creation ended 

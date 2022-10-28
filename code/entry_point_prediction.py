@@ -58,8 +58,8 @@ to_date_col            = 'To_Date'
 output_table_name = 'R_OutputTable'
 frequency      = 'w'
 
-parallel_processes = 1
-debug_mode = 'OFF'
+parallel_processes = 2
+debug_mode = 'ON'
 
 
 
@@ -115,10 +115,10 @@ logger.info("model_utilization task_creation started")
 Arguments = [df_sql_data, from_date_col, to_date_col, model_type_col_name, partition_col, database_connection, 
                                        model_path, model_prefix, frequency, output_date_col, output_prediction_col, output_partition_col, 
                                        model_last_date_col, output_table_name, parallel_processes, debug_mode]
-print('\n')
-for i in range(len(Arguments)) :
-    print(str(i)+": "+str(Arguments[i])) 
-print('\n')                                    
+# print('\n')
+# for i in range(len(Arguments)) :
+#     print(str(i)+": "+str(Arguments[i])) 
+# print('\n')                                    
 model_utilization.task_creation(df_sql_data, from_date_col, to_date_col, model_type_col_name, partition_col, database_connection, 
                                        model_path, model_prefix, frequency, output_date_col, output_prediction_col, output_partition_col, 
                                        model_last_date_col, output_table_name, parallel_processes, debug_mode)

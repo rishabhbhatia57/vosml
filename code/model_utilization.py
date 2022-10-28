@@ -29,7 +29,7 @@ logger = setup_custom_logger('root')
 
 def prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, 
                partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, 
-               Model_Type, database_connection, output_table_name, i):
+               Model_Type, output_table_name, i): # database_connection
     try:
         for x in l:
             warnings.filterwarnings("ignore")
@@ -104,8 +104,8 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
         #Changes here
         from_date = pd.to_datetime(df_Source[From_Date_Col].iloc[0])
         to_date = pd.to_datetime(df_Source[To_Date_Col].iloc[0])
-        print('from_date: '+str(from_date))
-        print('to_date: '+str(to_date))
+        # print('from_date: '+str(from_date))
+        # print('to_date: '+str(to_date))
         
         # from_date = pd.to_datetime('2021-06-19')
         # to_date = pd.to_datetime('2021-07-17')
@@ -170,24 +170,24 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
                 
                 last_date = pd.to_datetime(model_last_date_dataframe)
                 #print(model_last_date_dataframe)
-                print('last_date: '+str(last_date) +str(type(last_date)))
-                print('Diff: ' + str(to_date-last_date))
+                # print('last_date: '+str(last_date) +str(type(last_date)))
+                # print('Diff: ' + str(to_date-last_date))
                 nw = ((to_date-last_date)/7).dt.days.astype('int')
-                print(nw)
+                # print(nw)
                 n = nw.iloc[0]
-                print('periods:' +str(n))
-                print('model: '+str(model))
+                # print('periods:' +str(n))
+                # print('model: '+str(model))
                 future_dates=model.make_future_dataframe(periods=n, freq = 'w') # freq = m change weekly beacuse df was empty
                 # print(future_dates.iloc[-n:])
                 # print(future_dates)
                 #dates = (future_dates.iloc[-n:]) + pd.to_timedelta(1, unit = 'm')
                 dates = (future_dates.iloc[-n:])
-                print('dates: '+str(dates))
+                # print('dates: '+str(dates))
                 future_dates.drop(future_dates.tail(n).index,inplace=True)
                 future_dates = pd.concat([future_dates, dates])
                 future_dates['ds']=pd.to_datetime(future_dates['ds'])
                 future_dates.to_excel('future_dates.xlsx')
-                print(from_date,to_date)
+                # print(from_date,to_date)
                 future_dates = future_dates[(future_dates['ds'] >= from_date) & (future_dates['ds'] <= to_date )]
                 # print(future_dates)
                 break
@@ -209,40 +209,43 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
         
         
         #-------------------------
-        processes = []
+        processes1 = []
+        processes2 = []
         a = int(len(uniqueValues)/parallel_processes)
         #print(len(uniqueValues))
         print(uniqueValues)
 
-        # for i in range(0,parallel_processes-1):
-        #     print(str((i*a)) + ' , ' + str((i+1)*a))
-        #     l = uniqueValues[(i*a) : (i+1)*a]
-        #     print(l)
+        for i in range(0,parallel_processes-1):
+            print(str((i*a)) + ' , ' + str((i+1)*a))
+            l = uniqueValues[(i*a) : (i+1)*a]
+            print(l)
         # print(future_dates)
-        l = uniqueValues
-        prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, Model_Type, database_connection, output_table_name, i)
+        # l = uniqueValues
+        # prediction(l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, from_date, to_date, Model_Type_col_name, Model_Type, database_connection, output_table_name, i)
 
-            # p = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 
-            #                                                         Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, 
-            #                                                         from_date, to_date, Model_Type_col_name, Model_Type, database_connection, 
-            #                                                         output_table_name, i, ))
-            # p.start()
-            # time.sleep(3)
-            # processes.append(p)
-        # dif = (len(uniqueValues) - (parallel_processes * a))
-        # l = uniqueValues[((i)*a) : (parallel_processes*a)+dif]
-        # print(str(((i+1)*a)) + ' , ' +  str((parallel_processes*a)+dif))
+        p = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 
+                                                                Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col, 
+                                                                from_date, to_date, Model_Type_col_name, Model_Type, 
+                                                                output_table_name, i, )) # database_connection
+        p.start()
+        time.sleep(3)
+        processes1.append(p)
+        for process in processes1:
+            process.join()
+        dif = (len(uniqueValues) - (parallel_processes * a))
+        l = uniqueValues[((i)*a) : (parallel_processes*a)+dif]
+        print(str(((i+1)*a)) + ' , ' +  str((parallel_processes*a)+dif))
 
-        # p2 = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 
-        #                                                         Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col,
-        #                                                         from_date, to_date, Model_Type_col_name, Model_Type, database_connection, 
-        #                                                         output_table_name, i, ))
+        p2 = multiprocessing.Process(target=(prediction), args = (l, Model_path, model_prefix, future_dates, Output_Date_Col, Output_Partition_Col, 
+                                                                Output_Prediction_col, partition_col, Model_Last_Date_Col, From_Date_Col, To_Date_Col,
+                                                                from_date, to_date, Model_Type_col_name, Model_Type, 
+                                                                output_table_name, i, ))# database_connection
         
-        # p2.start()
+        p2.start()
         
-        # processes.append(p2)
-        # for process in processes:
-        #     process.join()
+        processes2.append(p2)
+        for process in processes2:
+            process.join()
         
         #-------------------------------------
         
@@ -257,7 +260,7 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
             final_dataframe.to_csv(f)
 
     except Exception as e:
-        print("Error while task_creation: "+str(e))
+        # print("Error while task_creation: "+str(e))
         exc_type, exc_obj, exc_tb = sys.exc_info()
         fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
         print(exc_type, fname, exc_tb.tb_lineno)

@@ -1067,3 +1067,304 @@ cwd: None
 cwd: None 
 2022-10-28 12:02:00,831 DEBUG TBB already found in load path 
 2022-10-28 12:02:01,488 INFO model_utilization task_creation ended 
+2022-10-31 14:02:16,740 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 14:02:17,210 INFO ------------Prediction Started------------ 
+2022-10-31 14:02:17,260 INFO model_utilization task_creation started 
+2022-10-31 14:02:17,360 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:02:17,620 DEBUG Adding TBB (C:\Users\HP\AppData\Roaming\Python\Python310\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-31 14:02:19,580 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 14:02:20,115 INFO ------------Prediction Started------------ 
+2022-10-31 14:02:20,165 INFO model_utilization task_creation started 
+2022-10-31 14:02:20,269 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:02:20,419 DEBUG TBB already found in load path 
+2022-10-31 14:02:20,472 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 14:02:20,473 INFO model_utilization task_creation ended 
+2022-10-31 14:02:20,476 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:02:20,601 DEBUG TBB already found in load path 
+2022-10-31 14:02:23,248 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 14:02:23,570 INFO ------------Prediction Started------------ 
+2022-10-31 14:02:23,600 INFO model_utilization task_creation started 
+2022-10-31 14:02:23,659 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:02:23,776 DEBUG TBB already found in load path 
+2022-10-31 14:02:23,837 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 14:02:23,837 INFO model_utilization task_creation ended 
+2022-10-31 14:02:23,842 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:02:23,973 DEBUG TBB already found in load path 
+2022-10-31 14:02:24,372 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:02:24,487 DEBUG TBB already found in load path 
+2022-10-31 14:02:24,844 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:02:24,968 DEBUG TBB already found in load path 
+2022-10-31 14:02:25,529 INFO model_utilization task_creation ended 
+2022-10-31 14:09:19,716 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 14:09:20,149 INFO ------------Prediction Started------------ 
+2022-10-31 14:09:20,180 INFO model_utilization task_creation started 
+2022-10-31 14:09:20,230 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:09:20,348 DEBUG Adding TBB (C:\Users\HP\AppData\Roaming\Python\Python310\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-31 14:09:22,140 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 14:09:22,453 INFO ------------Prediction Started------------ 
+2022-10-31 14:09:22,490 INFO model_utilization task_creation started 
+2022-10-31 14:09:22,543 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:09:22,663 DEBUG TBB already found in load path 
+2022-10-31 14:09:22,717 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 14:09:22,717 INFO model_utilization task_creation ended 
+2022-10-31 14:09:22,722 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:09:22,859 DEBUG TBB already found in load path 
+2022-10-31 14:09:25,225 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 14:09:25,651 INFO ------------Prediction Started------------ 
+2022-10-31 14:09:25,682 INFO model_utilization task_creation started 
+2022-10-31 14:09:25,734 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:09:25,861 DEBUG TBB already found in load path 
+2022-10-31 14:09:25,916 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 14:09:25,917 INFO model_utilization task_creation ended 
+2022-10-31 14:09:25,924 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:09:26,052 DEBUG TBB already found in load path 
+2022-10-31 14:09:26,386 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:09:26,509 DEBUG TBB already found in load path 
+2022-10-31 14:09:26,826 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 14:09:26,958 DEBUG TBB already found in load path 
+2022-10-31 14:09:27,445 INFO model_utilization task_creation ended 
+2022-10-31 15:24:15,817 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 15:24:16,456 INFO ------------Prediction Started------------ 
+2022-10-31 15:24:16,492 INFO model_utilization task_creation started 
+2022-10-31 15:24:16,557 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:24:16,724 DEBUG Adding TBB (C:\Users\HP\AppData\Roaming\Python\Python310\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-31 15:24:18,702 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 15:24:19,023 INFO ------------Prediction Started------------ 
+2022-10-31 15:24:19,055 INFO model_utilization task_creation started 
+2022-10-31 15:24:19,108 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:24:19,249 DEBUG TBB already found in load path 
+2022-10-31 15:24:19,305 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 15:24:19,305 INFO model_utilization task_creation ended 
+2022-10-31 15:24:19,309 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:24:19,437 DEBUG TBB already found in load path 
+2022-10-31 15:24:21,745 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 15:24:22,076 INFO ------------Prediction Started------------ 
+2022-10-31 15:24:22,113 INFO model_utilization task_creation started 
+2022-10-31 15:24:22,164 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:24:22,283 DEBUG TBB already found in load path 
+2022-10-31 15:24:22,352 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 15:24:22,452 INFO model_utilization task_creation ended 
+2022-10-31 15:24:22,456 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:24:22,585 DEBUG TBB already found in load path 
+2022-10-31 15:24:22,920 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:24:23,048 DEBUG TBB already found in load path 
+2022-10-31 15:24:23,379 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:24:23,504 DEBUG TBB already found in load path 
+2022-10-31 15:24:24,013 INFO model_utilization task_creation ended 
+2022-10-31 15:26:02,041 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 15:26:02,386 INFO ------------Prediction Started------------ 
+2022-10-31 15:26:02,418 INFO model_utilization task_creation started 
+2022-10-31 15:26:02,479 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:02,597 DEBUG Adding TBB (C:\Users\HP\AppData\Roaming\Python\Python310\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-31 15:26:04,582 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 15:26:04,894 INFO ------------Prediction Started------------ 
+2022-10-31 15:26:04,928 INFO model_utilization task_creation started 
+2022-10-31 15:26:04,979 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:05,108 DEBUG TBB already found in load path 
+2022-10-31 15:26:05,163 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 15:26:05,164 INFO model_utilization task_creation ended 
+2022-10-31 15:26:05,167 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:05,300 DEBUG TBB already found in load path 
+2022-10-31 15:26:05,313 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-31 15:26:07,478 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 15:26:07,802 INFO ------------Prediction Started------------ 
+2022-10-31 15:26:07,831 INFO model_utilization task_creation started 
+2022-10-31 15:26:07,887 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:08,011 DEBUG TBB already found in load path 
+2022-10-31 15:26:08,069 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 15:26:08,069 INFO model_utilization task_creation ended 
+2022-10-31 15:26:08,073 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:08,212 DEBUG TBB already found in load path 
+2022-10-31 15:26:08,226 ERROR Error while prediction: Dataframe has no rows. 
+2022-10-31 15:26:08,419 INFO model_utilization task_creation ended 
+2022-10-31 15:26:31,508 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 15:26:31,821 INFO ------------Prediction Started------------ 
+2022-10-31 15:26:31,854 INFO model_utilization task_creation started 
+2022-10-31 15:26:31,908 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:32,024 DEBUG Adding TBB (C:\Users\HP\AppData\Roaming\Python\Python310\site-packages\prophet\stan_model\cmdstan-2.26.1\stan\lib\stan_math\lib\tbb) to PATH 
+2022-10-31 15:26:33,999 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 15:26:34,324 INFO ------------Prediction Started------------ 
+2022-10-31 15:26:34,353 INFO model_utilization task_creation started 
+2022-10-31 15:26:34,403 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:34,524 DEBUG TBB already found in load path 
+2022-10-31 15:26:34,581 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 15:26:34,581 INFO model_utilization task_creation ended 
+2022-10-31 15:26:34,585 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:34,715 DEBUG TBB already found in load path 
+2022-10-31 15:26:36,927 INFO ------------Initializing Prediction queries------------ 
+2022-10-31 15:26:37,257 INFO ------------Prediction Started------------ 
+2022-10-31 15:26:37,285 INFO model_utilization task_creation started 
+2022-10-31 15:26:37,337 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:37,462 DEBUG TBB already found in load path 
+2022-10-31 15:26:37,517 ERROR Error while task_creation: 
+        An attempt has been made to start a new process before the
+        current process has finished its bootstrapping phase.
+
+        This probably means that you are not using fork to start your
+        child processes and you have forgotten to use the proper idiom
+        in the main module:
+
+            if __name__ == '__main__':
+                freeze_support()
+                ...
+
+        The "freeze_support()" line can be omitted if the program
+        is not going to be frozen to produce an executable. 
+2022-10-31 15:26:37,517 INFO model_utilization task_creation ended 
+2022-10-31 15:26:37,521 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:37,647 DEBUG TBB already found in load path 
+2022-10-31 15:26:37,991 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:38,170 DEBUG TBB already found in load path 
+2022-10-31 15:26:38,486 DEBUG cmd: where.exe tbb.dll
+cwd: None 
+2022-10-31 15:26:38,615 DEBUG TBB already found in load path 
+2022-10-31 15:26:39,253 INFO model_utilization task_creation ended 

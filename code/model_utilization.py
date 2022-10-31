@@ -172,12 +172,15 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
                 #print(model_last_date_dataframe)
                 # print('last_date: '+str(last_date) +str(type(last_date)))
                 # print('Diff: ' + str(to_date-last_date))
-                nw = ((to_date-last_date)/7).dt.days.astype('int')
+                if frequency == 'w':
+                    nw = ((to_date-last_date)/7).dt.days.astype('int')
+                if frequency == 'm':
+                    nw = ((to_date-last_date)/30).dt.days.astype('int')
                 # print(nw)
                 n = nw.iloc[0]
                 # print('periods:' +str(n))
                 # print('model: '+str(model))
-                future_dates=model.make_future_dataframe(periods=n, freq = 'w') # freq = m change weekly beacuse df was empty
+                future_dates=model.make_future_dataframe(periods=n, freq = frequency)
                 # print(future_dates.iloc[-n:])
                 # print(future_dates)
                 #dates = (future_dates.iloc[-n:]) + pd.to_timedelta(1, unit = 'm')
@@ -209,8 +212,7 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
         
         
         #-------------------------
-        processes1 = []
-        processes2 = []
+        processes = []
         a = int(len(uniqueValues)/parallel_processes)
         #print(len(uniqueValues))
         print(uniqueValues)
@@ -229,9 +231,7 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
                                                                 output_table_name, i, )) # database_connection
         p.start()
         time.sleep(3)
-        processes1.append(p)
-        for process in processes1:
-            process.join()
+        processes.append(p)
         dif = (len(uniqueValues) - (parallel_processes * a))
         l = uniqueValues[((i)*a) : (parallel_processes*a)+dif]
         print(str(((i+1)*a)) + ' , ' +  str((parallel_processes*a)+dif))
@@ -243,8 +243,8 @@ def task_creation(df_sql_data, From_Date_Col, To_Date_Col, Model_Type_col_name, 
         
         p2.start()
         
-        processes2.append(p2)
-        for process in processes2:
+        processes.append(p2)
+        for process in processes:
             process.join()
         
         #-------------------------------------
